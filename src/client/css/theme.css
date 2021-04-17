@@ -1,0 +1,298 @@
+@font-face{
+    font-family: 'nexa-bold';
+    src:url(../assets/fonts/Nexa-Bold.otf) format('opentype');
+}
+@font-face{
+    font-family: 'nexa-light';
+    src:url(../assets/fonts/Nexa-Light.otf) format('opentype');
+}
+  :root {
+      --darkblue-color: #021433 ;
+      --lightblue-color: #93BEDE;
+      --white-color: #ffffff;
+      --lightgray-color: #ececec;
+      --darklightblue-color:  #2781DE;
+      --vibblue-color: #0173B2;
+      --doctors-color: #0099FF;
+      --treatment-color: #CCE3F0;
+      --bordergray-color:  #c4c5c9;
+      --inactivetext-color:  #d1d1d1;
+      --gray-color: #cccccc;
+      --footer-color: #797a7a;
+      --buttonhover-color: rgba(32, 30, 51, 0.4);
+      --fs-h1: 2rem;
+      --fs-h3: 1.8rem;
+      --fs-h4: 1.6rem;
+      --fs-h5: 1.4rem;
+      --fs-h6: 1.1rem;
+      --fs-p: 0.9rem;
+      --fs-a: 0.9rem;
+      --h1-lh: 2rem;
+      --hh-lh: 1rem;
+      --p-lh: 1.2rem;
+      --li-lh: 1.1rem;
+      --ff-light: 'nexa-light';
+      --ff-bold: 'nexa-bold';
+      
+  }
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--ff-light);
+}
+h1, h2, h3, h5 {
+    font-family: var(--ff-bold);
+    color: var(--darkblue-color) ;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+h1, h2 {
+    font-size: var(--fs-h1);
+    line-height: var(--h1-lh);
+}
+h3 {
+    font-size: var(--fs-h3);
+    line-height: 2.2rem;
+}
+h4 {
+    font-size: var(--fs-h4);
+    line-height: 1.8rem;
+}
+h5 {
+    font-size: var(--fs-h5);
+    line-height: 2rem;
+}
+h6 {
+    font-size: var(--fs-h6);
+    font-family: var(--ff-bold);
+    line-height: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+p {
+    font-family: var(--ff-light);
+    color: var(--darkblue-color);
+    font-size: var(--fs-p);
+    margin-bottom: 0.8rem;
+    text-align: center;
+    line-height: var(--p-lh);
+    letter-spacing: 0.01rem;
+}
+a {
+    text-decoration: none;
+    font-size: var(--fs-a);
+    color: var(--darkblue-color);
+}
+a:hover {
+    font-weight: bolder;
+}
+i {
+    color: var(--darkblue-color);
+}
+i:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+label{
+    font-family: var(--ff-light);
+    font-size: var(--fs-p);
+}
+button {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    outline: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--buttonhover-color);
+}
+form {
+    width: 100%;
+}
+/*-------------Button types-------------*/
+.transparent_button {
+    background-color: var(--white-color);
+    color: var(--darkblue-color);
+    border: 1px solid var(--darkblue-color);
+    border-radius: 4px;
+}
+.darkblue_button {
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    border: 1px solid var(--darkblue-color);
+    border-radius: 4px;
+}
+.sub_your_en_but {
+    background-color: var(--vibblue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+}
+/*-------------*/
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+}
+input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date] {
+    width: 100%;
+    font-size: var(--fs-a);
+    font-family: var(--ff-light);
+    padding: 0.6rem 0.5rem;
+    border: none;
+    outline: none;
+    color: var(--darkblue-color);
+}
+textarea {
+    border: none;
+    outline: none;
+    color: var(--darkblue-color);
+    width: 100%;
+    height: 100px;
+    font-size: var(--fs-a);
+    font-family: var(--ff-light);
+    padding: 0.6rem 0.5rem;
+}
+section, footer {
+    padding: 1.5rem;
+}
+ul>li, ol>li{
+    font-size: var(--fs-p);
+    color: var(--darkblue-color);
+    margin: 0.1rem 0;
+    line-height: var(--li-lh);
+}
+nav {
+    padding: 1rem 1.5rem;
+}
+select option {
+    font-family: 'nexa-light';
+    font-size: var(--fs-a);
+    color: var(--darkblue-color);
+    line-height: var(--hh-lh);
+}
+@media only screen and (min-device-width:768px) {
+    :root {
+        --fs-h1: 2.1rem;
+        --fs-h3: 1.9rem;
+        --fs-h4: 1.7rem;
+        --fs-h5: 1.5rem;
+        --fs-h6: 1.3rem;
+        --fs-p: 1rem;
+        --fs-a: 1rem;
+    }
+    h1,h2 {
+        font-size: var(--fs-h1);
+    }
+    h3 {
+        font-size: var(--fs-h3);
+    }
+    h4 {
+        font-size: var(--fs-h4);
+    }
+    h5 {
+        font-size: var(--fs-h5);
+    }
+    h6 {
+        font-size: var(--fs-h6);
+    }
+    p {
+        font-size: var(--fs-p);
+    }
+    a {
+        font-size: var(--fs-a);
+    }
+    nav {
+        padding: 1rem 1.8rem;
+    }
+    ul>li, ol>li {
+        font-size: var(--fs-p);
+    }
+    section {
+        padding: 1.8rem;
+    }
+    footer {
+        padding: 1rem 1.8rem;
+    }
+    input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date] {
+        padding: 0.73rem 1.5rem;
+    }
+    select option {
+        font-size: var(--fs-a);
+    }
+}
+
+@media only screen and (min-device-width:1024px){
+    :root {
+        --fs-h1: 2.6rem;
+        --fs-h3: 2rem;
+        --fs-h4: 1.8rem;
+        --fs-h5: 1.6rem;
+        --fs-h6: 1.4rem;
+        --fs-p: 1.1rem;
+        --fs-a: 1rem;
+    }
+    nav {
+        padding: 1rem 5rem;
+    }
+    section {
+        padding: 4rem 5rem;
+    }
+    footer {
+        padding: 2rem 5rem;
+    }
+    h1,h2 {
+        font-size: var(--fs-h1);
+        text-align: left;
+        line-height: 3rem;
+        word-spacing: 0.4rem;
+    }
+    h3 {
+        font-size: var(--fs-h3);
+        line-height: 3rem;
+    }
+    h4 {
+        font-size: var(--fs-h4);
+    }
+    h5 {
+        font-size: var(--fs-h5);
+        line-height: 2rem;
+        word-spacing: 0.2rem;
+    }
+    h6 {
+        font-size: var(--fs-h6);
+    }
+    p {
+        font-size: var(--fs-p);
+        text-align: left;
+        line-height: 1.6rem;
+    }
+    ul>li, ol>li {
+        font-size: var(--fs-p);
+        line-height: 1.6rem;
+    }
+    input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date]  {
+        padding: 0.72rem 1.5rem;
+    }
+    select option {
+        font-size: var(--fs-p);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

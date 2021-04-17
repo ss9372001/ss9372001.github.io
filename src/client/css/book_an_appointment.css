@@ -1,0 +1,150 @@
+/*-------------Header----------------*/
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: 8rem;
+    height: 1.8rem;
+}
+.header_links, .navbar_buttons {
+    display: none;
+}
+.fa-bars {
+    color: var(--darkblue-color);
+}
+/* -------------Book an appointment form---------------- */
+.book_appointment_form {
+    background-color: var(--lightblue-color);
+}
+.appointment_heading {
+    background-color: var(--white-color);
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid var(--bordergray-color);
+}
+.book_an_appointment {
+    padding: 1rem;
+    background-color: var(--white-color);
+}
+.appointment_heading h4 {
+    margin-bottom: 0;
+    font-family: var(--ff-bold);
+    color: var(--doctors-color);
+    text-align: center;
+}
+.book_an_appointment h6 {
+    text-align: left;
+}
+.appointment {
+    border: 2px solid var(--bordergray-color);
+    margin-bottom: 1rem;
+}
+.time_interval {
+    margin-bottom: 1rem;
+}
+/* .time label, .status label {
+    font-size: 0.8rem;
+} */
+.time input, .status input {
+    margin: 0 1rem 0 0;
+}
+.time, .status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.appointment_status {
+    margin-bottom: 1rem;
+}
+.file {
+    border: 1px solid var(--darkblue-color);
+    width: fit-content;
+    padding: 0 4px;
+    background-color: var(--bordergray-color);
+}
+.file p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+.health_records p {
+    /* font-size: 0.8rem; */
+    margin: 0;
+}
+.health_records div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+.health_records {
+    margin-bottom: 1rem;
+}
+.appointment_details textarea {
+    border: 1px solid var(--bordergray-color);
+    margin-bottom: 1rem;
+}
+.book_appointment-btn {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--darkblue-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+.bookan_appointment {
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    font-size: 0.9rem;
+}
+.fa-arrow-right {
+    color: var(--white-color);
+    font-size: 0.9rem;
+}
+footer {
+    background-color: var(--lightblue-color);
+    padding: 0;
+}
+.footer p {
+    margin-bottom: 0;
+}
+.foo-ter {
+    font-size: 0.8rem;
+    font-family: 'nexa-bold';
+}
+/*-----------------Tablet View---------------------*/
+@media only screen and (min-device-width:768px) {
+    footer {
+        margin-top: -1px;
+    }
+    .book_appointment_form {
+        padding: 6rem 5rem;
+    }
+    .book_an_appointment {
+        padding: 2rem;
+    }
+}
+
+
+/*-----------------Desktop View---------------------*/
+@media only screen and (min-device-width:1024px) { 
+    /*-----------------Header----------------*/
+    .header_links, .navbar_buttons {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .header_links a:not(:last-child){
+        margin-right: 1.875rem;
+    }
+    .book_appointment_form {
+        padding: 10rem 20rem;
+    }
+    .footer p {
+        text-align: center;
+    }
+}

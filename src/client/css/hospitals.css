@@ -1,0 +1,376 @@
+/*-------------Header----------------*/
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: 8rem;
+    height: 2rem;
+}
+.header_links, .navbar_buttons {
+    display: none;
+}
+/* ------------Hospitals section------------- */
+select {
+    background: var(--bordergray-color);
+    padding: 8px 10px;
+    width: 100px;
+    border: none;
+}
+.hospital-section_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.hospital-section_heading p {
+    margin: 0;
+}
+.hospitals_filters {
+    display: none;
+}
+.hospitals_filters_grid {
+    margin-top: 30px;
+}
+/* filter section */
+.selected_filters {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.selected_filters div {
+    border: 1px solid var(--bordergray-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 6px;
+    width: max-content;
+    margin-left: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.selectedfilters {
+    display: none;
+}
+.fa-times, .fa-search {
+    color: var(--vibblue-color);
+}
+.fa-minus {
+    color: var(--gray-color);
+} 
+.filter_list_heading h6 {
+    margin-bottom: 0;
+}
+/* ------------Hospital boxes--------------- */
+.hospitals {
+    width: 100%;
+    border: 1px solid var(--bordergray-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.blue__line {
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--doctors-color);
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title h5 {
+    color: var(--doctors-color);
+    margin: 0;
+}
+.list {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.list li {
+    margin-bottom: 10px;
+}
+.list .fa {
+    color: var(--doctors-color);
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.call_now {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0.7rem;
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    padding: 0.7rem 2rem;
+    border: none;
+}
+.specifics div {
+    border: 1px solid var(--gray-color);
+    width: fit-content;
+    padding: 6px;
+    border-radius: 10px;
+    margin-bottom: 0.4rem;
+    margin-right: 0.4rem;
+    margin-left: 10px;
+}
+.specifics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* ------------------Need help section------------------ */
+.section6 {
+    background-color: var(--lightblue-color);
+}
+.section6 .needhelp_headings h2 {
+    color: var(--white-color);
+}
+.section6 .needhelp_headings p {
+    color: var(--darkblue-color);
+}
+.submit_your_enquiry_button {
+    display: flex;
+    justify-content: center;
+}
+/*--------------------Footer-------------------*/
+footer {
+    padding: 1.5rem;
+}
+.footer {
+    background-color: var(--darkblue-color);
+}
+.footer_logo,.footer_links,.font-awesome-icons,.footer_text, .socialmedia  {
+    text-align: center;
+    margin-top: 0.7rem;
+}
+.footer_links, .socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_links ul li:not(:last-child), .socialmedia ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+.footer-logo_mobview {
+    width: 10rem;
+    height: 2rem;
+    margin: 0 auto;
+}
+.footer-logo_tabdeskview {
+    width: 10rem;
+    height: 2rem;
+    margin: 0 auto;
+    display: none;
+}
+.foot-head h4{
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.footer_links a, .font-awesome-icons i, .fa-copyright , .socialmedia a{
+    color: var(--gray-color);
+    font-size: 1rem;
+}
+.footer_text p {
+    color: var(--footer-color);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+.font-awesome-icons {
+    display: none;
+}
+/* ---------Horizontalblue line--------- */
+
+.footer_blueline {
+    width: 100%;
+    height: 8px;
+    background-color: var(--vibblue-color);
+    display: none;
+}
+/* ------------Tablet view--------------- */
+@media only screen and (min-device-width:768px) {
+    /* -----------------Filter list----------------- */
+    .filter-list-heading-location {
+        width: 100%;
+        background-color: var(--inactivetext-color);
+        color: var(--darkblue-color);
+        text-align: left;
+        padding: 10px;
+        font-family: 'nexa-bold';
+    }
+    .search-location-minus {
+        display: flex;
+    }
+    .filter_list_heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    /* -------------------hospitals grid-------------------- */
+
+    .hospitals {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding-top: 0;
+        position: relative;
+    }
+    .hospitals .title {
+        margin-top: 20px;
+    }
+    .blue__line {
+        width: 2.5rem;
+    }
+    .list {
+        margin-left: 3rem;
+    }
+    .hospitals .left_info .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        margin-top: 20px;
+    }
+    .img_iml1 {
+        width: 100%;
+        height: 320px;
+    }
+    .specifics {
+        margin-left: 3rem;
+    }
+    .call_now {
+        bottom: 1rem;
+        left: 3rem;
+        position: absolute;
+    }
+    .checkbox {
+        margin-top: 20px;
+    }
+    .checkbox li {
+        display: flex;
+        align-content: center;
+        margin-bottom: 0.5rem;
+    }
+    .checkbox label {
+        margin-left: 1rem;
+    }
+    .hospitals_filters .showmore p {
+        color: var(--vibblue-color);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 1rem;
+    } 
+    .hor_line {
+        width: 100%;
+        background-color: var(--gray-color);
+        height: 1px;
+    }
+    /*--------------------Footer-----------------------*/
+    .footer {
+        background-color:  var(--white-color);
+    }
+    .footer_links a, .font-awesome-icons i, .footer_text p{
+        color: var(--darkblue-color);
+        margin: 0;
+    }
+    .footer-logo_mobview {
+        display: none;
+    }
+    .footer-logo_tabdeskview {
+        display: block;
+    }
+    .footer_links ul {
+        display: flex;
+    }
+    .footer_links ul li:not(:last-child) {
+        margin-right: 0.8rem;
+    }
+    .footer_container {
+        display: grid;
+        grid-template: 
+        "links logo"
+        "footer icons";
+        column-gap: 20px;
+    }
+    .font-awesome-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 180px;
+        margin: 1rem auto;
+    }
+    .foot-head ,.socialmedia{
+        display: none;
+    }
+    .footer_links {
+        grid-area: links;
+        justify-self: start;
+    }
+    .footer-logo_tabdeskview {
+        grid-area: logo;
+        margin: 0;
+        justify-self: end;
+    }
+    .footer_text {
+        grid-area: footer;
+        margin: 1rem 0;
+        justify-self: start;
+    }
+    .font-awesome-icons {
+        grid-area: icons;
+        margin: 1rem 0;
+        justify-self: end;
+    }
+    /*------------------------footer------------------------*/
+    .footer_blueline {
+        display: block;
+    }
+}
+
+/* -----------------Desktop view----------------- */
+@media only screen and (min-device-width:1024px) {
+    /*-----------------Header----------------*/
+    .header_links, .navbar_buttons {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .header_links a:not(:last-child){
+        margin-right: 1.875rem;
+    }
+    /* -----------hospitals section---------- */
+    .hospitals_filters {
+        display: block;
+    }
+     /* filter section */
+    .hospitals_filters_grid {
+        display: grid;
+        grid-template-columns: 20% 78.3%;
+        column-gap: 20px;
+    }
+       
+        
+        .selectedfilters {
+            display: block;
+        }
+
+        /*---------------------------section6----------------------*/
+    .section6 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .call_now {
+        font-size: 1rem;
+        padding: 1rem 3.2rem;
+        border-radius: 2px;
+    }
+}
+
+
