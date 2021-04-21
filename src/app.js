@@ -1,25 +1,4 @@
 
-// app.engine("html", require("ejs").renderFile);
-
-// //setting view engine as ejs
-// app.set("view engine", "ejs");
-
-// // app.use(express.static(path.join(__dirname, "/client/assets")));
-// app.use(express.static((__dirname+ "/client")));
-// // app.use(express.static(path.join(__dirname, "/client/javascript")));
-
-// app.get('/', (req, res)=>{
-// 	res.render("index");
-// })
-// app.set("port", process.env.PORT || 4000);
-
-// app.listen(app.get("port"), ()=>{
-//     console.log("Application running in port:"+app.get("port"));
-// })
-
-// module.exports = app;
-
-
 const express = require('express');
 
 const ejs = require('ejs');
@@ -121,6 +100,10 @@ app.get('/doctor-profile', (req, res) => {
 
 app.get('/faq', (req, res) => {
 	res.render('faq');
+});
+
+app.get('/book_an_appointment', (req, res)=>{
+    res.render('book_an_appointment');
 });
 
 app.get('/tvastra-plus', (req, res) => {
