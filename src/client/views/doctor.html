@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <%- include('partials/head.ejs') %> -->
+    <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/doctor.css">
+    <title>Doctors</title>
+</head>
+<body>
+    
+   <!-- ----------------Header--------------- -->
+   <!-- <%- include('partials/header.ejs') %> -->
+    <!-----------Header------------------->
+<header>
+    <nav class="nav_bar">
+        
+        <a href="../html/index.html">
+            <div class="header__logo"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="TVASTRA"></div>
+        </a>
+        
+        <a href="#" class="menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        
+        <div class="header_links">
+            <a href="../html/doctor.html">Doctors</a>
+            <a href="../html/hospitals.html">Hospitals</a>
+            <a href="../html/treatment.html">Treatments</a>
+            <a href="#">Other Services</a>
+            <a href="#">About</a>
+        </div>
+        
+        <div class="navbar_buttons">
+            <button class="transparent_button" type="button">Login / Sign Up</button>
+            <button class="darkblue_button" type="button">Get a Quote</button>
+        </div>
+        
+    </nav>
+</header>
+    <!---------------- A SECTION--------------------->
+    <section class="cardiac_surgeons">
+        <p>Cardiac Surgeons in <span>Delhi</span></p>
+    </section>  
+    <!----------------------Section1-------------------->
+    <section class="doctor_section1">
+
+        <div class="doctor-section_heading">
+            <p>Home / Doctor List</p>
+                <select name="dropdn" id="dropdn">
+                    <option value="sortby">Sort By</option>
+                    <option value="location">Location</option>
+                    <option value="treatment">Treatment</option>
+                    <option value="hospitals">Hospitals</option>
+                    <option value="yearofexperience">Year of experience</option>
+                </select>
+        </div>
+
+        <div class="doctors_filters_grid">
+
+            <div class="doctors_filters">
+                <div class="filter-list-heading">
+                    <div class="filter-list-heading-location">Filter By</div>
+                </div>
+
+                <div class="selectedfilters">
+                    <div class="selected_filters">
+                        <div>DLF Cyber City  <i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div>Multi Organ Transplant  <i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div>Apollo Hospital  <i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div>30+  <i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="filter_list_heading">
+                    <div class="headinng"><h6>Location</h6></div>
+                    <div class="search-location-minus">
+                        <i class="fa fa-search"></i>   
+                        <i class="fa fa-minus"></i>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="location1" name="location1" value="DLF Cyber City">
+                            <label for="location1"> DLF Cyber City</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="location2" name="location2" value="Dwarka">
+                            <label for="location2"> Dwarka</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="location3" name="location3" value="Lajpat Nagar">
+                            <label for="location3"> Lajpat Nagar</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="location4" name="location4" value="Palam Vihar">
+                            <label for="location4"> Palam Vihar</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="location5" name="location5" value="Punjabi Baag">
+                            <label for="location5"> Punjabi Baag</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="location6" name="location6" value="Pusa Road">
+                            <label for="location6"> Pusa Road</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="showmore"><p>+  Show  More</p></div>
+
+                <div class="hor_line"></div>
+
+                <div class="filter_list_heading">
+                    <div class="headinng"><h6>Treatment</h6></div>
+                    <div class="search-location-minus">
+                        <i class="fa fa-search"></i>   
+                        <i class="fa fa-minus"></i>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="treatment1" name="treatment1" value="Multi Organ Transplant">
+                            <label for="treatment1"> MultiOrgan Transplant</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="treatment2" name="treatment2" value="Orthopedic Surgery">
+                            <label for="treatment2"> Orthopedic Surgery</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="treatment3" name="treatment3" value="Infertility Treatment">
+                            <label for="treatment3"> Infertility Treatment</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="treatment4" name="treatment4" value="Dentistry">
+                            <label for="treatment4"> Dentistry</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="treatment5" name="treatment5" value="Cardiology">
+                            <label for="treatment5"> Cardiology</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="treatment6" name="treatment6" value="Cancer">
+                            <label for="treatment6"> Cancer</label>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="showmore"><p>+  Show  More</p></div>    
+                
+                <div class="hor_line"></div>
+
+                <div class="filter_list_heading">
+                    <div class="headinng"><h6>Hospitals</h6></div>
+                    <div class="search-location-minus">
+                        <i class="fa fa-search"></i>   
+                        <i class="fa fa-minus"></i>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="hospital1" name="hospital1" value="Apollo Hospital">
+                            <label for="hospital1"> Apollo Hospital</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hospital2" name="hospital2" value="Manipal North Side Hospital">
+                            <label for="hospital2"> Manipal North Side Hospital</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hospital3" name="hospital3" value="Northstar">
+                            <label for="hospital3"> Northstar</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hospital4" name="hospitalt4" value="AIIMS">
+                            <label for="hospital4"> AIIMS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hospital5" name="hospital5" value="Fortis Hospital">
+                            <label for="hospital5"> Fortis Hospital</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hospital6" name="hospital6" value="Elbit Diagnostic">
+                            <label for="hospital6"> Elbit Diagnostic</label>
+                        </li>
+                    </ul>      
+                </div>
+                <div class="showmore"><p>+  Show  More</p></div>
+
+                <div class="hor_line"></div>
+
+                <div class="filter_list_heading">
+                    <div class="headinng"><h6>Year of experience</h6></div>
+                    <div class="search-location-minus">
+                        <i class="fa fa-search"></i>   
+                        <i class="fa fa-minus"></i>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="experience1" name="experience1" value="30+">
+                           <label for="experience1"> 30+</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="experience2" name="experience2" value="25+">
+                            <label for="experience2"> 25+</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="experience3" name="experience3" value="20+">
+                            <label for="experience3"> 20+</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="experience4" name="experience4" value="15+">
+                            <label for="experience4"> 15+</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="experience5" name="experience5" value="10+">
+                            <label for="experience5"> 10+</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="experience6" name="experience6" value="5+">
+                            <label for="experience6"> 5+</label>
+                        </li>
+                    </ul>          
+                </div>
+                <div class="showmore"><p>+  Show  More</p></div>
+
+                <div class="hor_line"></div>
+
+            </div>
+
+            <div class="doctors-grid">
+
+                <div class="doctors" id="box__1">
+                    <div class="left_info">
+                        <div class="title">
+                            <div class="blue__line"></div>
+                            <h5>Duke Sanson</h5>
+                        </div>
+                        <ul class="list">
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i>Duke Sanson</li>
+                            <li><i class="fa fa-fort-awesome" aria-hidden="true"></i>Neuro Surgeon</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>Department of Neurological Surgery</li>
+                            <li><i class="fa fa-hospital-o" aria-hidden="true"></i>Doctor1</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Australia</li>
+                        </ul>
+                        <button class="book_an_appointment" type="button">Book an appointment</button>
+                    </div>
+                    <div class="img_iml1">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg">
+                    </div>
+                </div>
+    
+                <div class="doctors" id="box__2">
+                    <div class="left_info">
+                        <div class="title">
+                            <div class="blue__line"></div>
+                            <h5>Georgea Peter</h5>
+                        </div>
+                        <ul class="list">
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i>Georgea Peter</li>
+                            <li><i class="fa fa-fort-awesome" aria-hidden="true"></i>Breast Cancer Surgeon</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>Direcotr, UT, Southwest</li>
+                            <li><i class="fa fa-hospital-o" aria-hidden="true"></i>doctor2</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>London</li>
+                        </ul>
+                        <button class="book_an_appointment" type="button">Book an appointment</button>
+                    </div>
+                    <div class="img_iml1">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg">
+                    </div>
+                </div>
+    
+                <div class="doctors" id="box__3">
+                    <div class="left_info">
+                        <div class="title">
+                            <div class="blue__line"></div>
+                            <h5>Charlie Moon</h5>
+                        </div>
+                        <ul class="list">
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i>Charlie Moon</li>
+                            <li><i class="fa fa-fort-awesome" aria-hidden="true"></i>Cardiac Surgeon</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>MBBS, MD, FRCP, MRCP, Fellowship</li>
+                            <li><i class="fa fa-hospital-o" aria-hidden="true"></i>doctor3</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi, India</li>
+                        </ul>
+                        <button class="book_an_appointment" type="button">Book an appointment</button>
+                    </div>
+                    <div class="img_iml1">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg">
+                    </div>
+                </div>
+    
+                <div class="doctors" id="box__4">
+                    <div class="left_info">
+                        <div class="title">
+                            <div class="blue__line"></div>
+                            <h5>Rose Moon</h5>
+                        </div>
+                        <ul class="list">
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i>Rose Moon</li>
+                            <li><i class="fa fa-fort-awesome" aria-hidden="true"></i>Plastic Surgeon</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>Department of Plastic and Reconstructive Surgery</li>
+                            <li><i class="fa fa-hospital-o" aria-hidden="true"></i>doctor4</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Dubai</li>
+                        </ul>
+                        <button class="book_an_appointment" type="button">Book an appointment</button>
+                    </div>
+                    <div class="img_iml1">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg">
+                    </div>
+                </div>
+    
+                <div class="doctors" id="box__5">
+                    <div class="left_info">
+                        <div class="title">
+                            <div class="blue__line"></div>
+                            <h5>shubham shinde</h5>
+                        </div>
+                        <ul class="list">
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i>3544, 2356</li>
+                            <li><i class="fa fa-fort-awesome" aria-hidden="true"></i>MBA, MBBS, FukDegree</li>
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>4 years of experience</li>
+                            <li><i class="fa fa-hospital-o" aria-hidden="true"></i>nothing</li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Greater Noida</li>
+                        </ul>
+                        <button class="book_an_appointment" type="button">Book an appointment</button>
+                    </div>
+                    <div class="img_iml1">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg">
+                    </div>
+                </div>
+        </div>
+
+        </div>
+
+    </section>
+
+<!-- ---------------Need help section---------------- -->
+        
+    <!-- <%- include('partials/help.ejs') %> -->
+    <!----------------Need help section---------------->
+
+<section class="section6">
+
+    <div class="needhelp_headings">
+
+        <h2>Need Help?</h2>
+        <p>Just let us know, we will be happy to assist you.</p>
+            
+    </div>
+    
+    <div class="submit_your_enquiry_button">
+        <button class="sub_your_en_but" type="button">Submit your enquiry</button>
+    </div>
+
+</section>
+            
+<!-- ----------------------FOOter------------------------ -->
+
+    
+    <!-- <%- include('partials/footer.ejs') %> -->
+    <footer class="footer">
+
+        <div class="footer_container">
+    
+            <div class="footer-logo_mobview">
+                <img class="mobview" src="../assets/footerlogo.jpg">
+            </div>
+    
+            <div class="footer-logo_tabdeskview">
+                <img class="tabdeskview" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg">
+            </div>
+    
+            <div class="foot-head">
+                <h4>TVASTRA</h4>
+            </div>
+    
+            <div class="footer_links">
+                <ul>
+                    <li><a href="#" class="foo-ter">Doctors</a></li>
+                    <li><a href="#" class="foo-ter">Hospitals</a></li>
+                    <li><a href="#" class="foo-ter">Treatment</a></li>
+                    <li><a href="#" class="foo-ter">Other Services</a></li>
+                    <li><a href="#" class="foo-ter">FAQS</a></li>
+                </ul>
+            </div>
+    
+            <div class="font-awesome-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+    
+            <div class="foot-head">
+                <h4>FOLLOW US</h4>
+            </div>
+    
+            <div class="socialmedia">
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer_text">
+                <p class="foo-ter">All Rights Reserved. &copy; tvastra 2018</p>
+            </div>
+    
+        </div>
+        
+    </footer>
+    
+    <div class="footer_blueline"></div>
+
+</body>
+</html>
