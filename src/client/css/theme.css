@@ -103,7 +103,7 @@ i:hover {
 }
 label{
     font-family: var(--ff-light);
-    font-size: var(--fs-p);
+    font-size: var(--fs-a);
 }
 button {
     padding: 0.8rem 1.8rem;
@@ -166,7 +166,7 @@ section, footer {
     padding: 1.5rem;
 }
 ul>li, ol>li{
-    font-size: var(--fs-p);
+    font-size: var(--fs-a);
     color: var(--darkblue-color);
     margin: 0.1rem 0;
     line-height: var(--li-lh);
@@ -188,7 +188,7 @@ select option {
         --fs-h5: 1.5rem;
         --fs-h6: 1.3rem;
         --fs-p: 1rem;
-        --fs-a: 1rem;
+        --fs-a: 0.9rem;
     }
     h1,h2 {
         font-size: var(--fs-h1);
@@ -215,7 +215,7 @@ select option {
         padding: 1rem 1.8rem;
     }
     ul>li, ol>li {
-        font-size: var(--fs-p);
+        font-size: var(--fs-a);
     }
     section {
         padding: 1.8rem;
@@ -277,7 +277,7 @@ select option {
         line-height: 1.6rem;
     }
     ul>li, ol>li {
-        font-size: var(--fs-p);
+        font-size: var(--fs-a);
         line-height: 1.6rem;
     }
     input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date]  {

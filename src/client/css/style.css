@@ -53,11 +53,11 @@
     color: var(--inactivetext-color);
     font-family: 'nexa-bold';
     text-align: left;
+    font-size: 1.2rem;
     margin-top: 0.7rem;
     word-spacing: 0.2rem;
 }
 .info_image {
-    /* width: 80vw; */
     margin: 0.5rem auto;
 }
 .active-item {
@@ -480,7 +480,7 @@
     
     .list {
         display: grid;
-        grid-template-columns: 45% 55%;
+        /* grid-template-columns: 45% 55%; */
         margin-top: 40px;
         column-gap: 50px;
     }

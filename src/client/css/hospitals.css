@@ -14,6 +14,7 @@ select {
 }
 .hospital-section_heading p {
     margin: 0;
+    font-size: 1.2rem;
 }
 .hospitals_filters {
     display: none;
@@ -30,11 +31,11 @@ select {
 }
 .selected_filters div {
     border: 1px solid var(--bordergray-color);
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 0.9rem;
     padding: 6px;
     width: max-content;
-    margin-left: 0.4rem;
+    margin-right: 0.4rem;
     margin-bottom: 0.4rem;
 }
 .selectedfilters {
@@ -67,7 +68,7 @@ select {
     justify-content: flex-start;
     align-items: center;
 }
-.title h5 {
+.title h6 {
     color: var(--doctors-color);
     margin: 0;
 }
@@ -100,7 +101,6 @@ select {
     border-radius: 10px;
     margin-bottom: 0.4rem;
     margin-right: 0.4rem;
-    margin-left: 10px;
 }
 .specifics {
     display: flex;
@@ -115,7 +115,7 @@ select {
         background-color: var(--inactivetext-color);
         color: var(--darkblue-color);
         text-align: left;
-        padding: 10px;
+        padding: 12px;
         font-family: 'nexa-bold';
     }
     .search-location-minus {
@@ -126,14 +126,15 @@ select {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         margin-top: 1rem;
+        margin-left: 12px;
     }
     /* -------------------hospitals grid-------------------- */
 
     .hospitals {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 68% 31%;
+        column-gap: 10px;
         padding-top: 0;
         position: relative;
     }
@@ -166,6 +167,7 @@ select {
     }
     .checkbox {
         margin-top: 20px;
+        margin-left: 12px;
     }
     .checkbox li {
         display: flex;
@@ -198,8 +200,11 @@ select {
      /* filter section */
     .hospitals_filters_grid {
         display: grid;
-        grid-template-columns: 20% 78.3%;
+        grid-template-columns: 23% 75.3%;
         column-gap: 20px;
+    }
+    .headinng {
+        font-size: 1.1rem;
     }
     .selectedfilters {
         display: block;

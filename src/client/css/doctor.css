@@ -22,6 +22,7 @@
     }
     .doctor-section_heading p {
         margin: 0;
+        font-size: 1.2rem;
     }
     /* --------------------Hiding filter section for mobile view---------------------- */
     .doctors_filters {
@@ -42,11 +43,11 @@
     }
     .selected_filters div {
         border: 1px solid var(--bordergray-color);
-        border-radius: 8px;
+        border-radius: 12px;
         font-size: 0.9rem;
         padding: 6px;
         width: max-content;
-        margin-left: 0.4rem;
+        margin-right: 0.4rem;
         margin-bottom: 0.4rem;
     }
     .selectedfilters {
@@ -79,7 +80,7 @@
         justify-content: flex-start;
         align-items: center;
     }
-    .title h5 {
+    .title h6 {
         color: var(--doctors-color);
         margin: 0;
     }
@@ -152,7 +153,7 @@
         }
         .doctors_filters_grid {
             display: grid;
-            grid-template-columns: 25% 72%;
+            grid-template-columns: 23% 75%;
             column-gap: 20px;
         }
 
@@ -163,7 +164,7 @@
         background-color: var(--inactivetext-color);
         color: var(--darkblue-color);
         text-align: left;
-        padding: 10px;
+        padding: 12px;
         font-family: 'nexa-bold';
     }
     .search-location-minus {
@@ -174,14 +175,17 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         margin-top: 1rem;
+        margin-left: 12px;
     }
-
+    .headinng {
+        font-size: 1.1rem;
+    }
     /* -------------------Doctors grid-------------------- */
     .doctors {
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 68% 31%;
+        column-gap: 10px;
         padding-top: 0;
         position: relative;
     }
@@ -197,11 +201,11 @@
     .doctors .left_info .list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 10px;
+        /* row-gap: 10px; */
         margin-top: 20px;
     }
     .img_iml1 {
-        height: 280px;
+        height: 260px;
     }
     .book_an_appointment {
         bottom: 1rem;
@@ -215,11 +219,11 @@
     }
     .checkbox {
         margin-top: 20px;
+        margin-left: 12px;
     }
     .checkbox li {
         display: flex;
         align-content: center;
-        margin-bottom: 0.5rem;
     }
     .checkbox label {
         margin-left: 1rem;
@@ -246,9 +250,9 @@
     /* -----------doctors section---------- */
 
         /* filter section */
-        .doctors_filters_grid {
+        /* .doctors_filters_grid {
             grid-template-columns: 20% 78.5%;
-        }
+        } */
         .doctors .title {
             margin-top: 2.5rem;
         }

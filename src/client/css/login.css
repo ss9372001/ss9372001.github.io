@@ -57,7 +57,7 @@ body {
     color: var(--white-color);
     font-size: 0.8rem;
     justify-self: end;
-
+    margin-right: 1rem;
 }
 .login_footer {
     background-color: var(--white-color);

@@ -5,7 +5,7 @@
 }
 .appointment_heading {
     background-color: var(--white-color);
-    padding: 1.5rem 1rem;
+    padding: 2rem;
     border-bottom: 1px solid var(--bordergray-color);
 }
 .book_an_appointment {
@@ -74,6 +74,7 @@
 .fa-arrow-right {
     color: var(--white-color);
     font-size: 0.9rem;
+    margin-right: 1rem;
 }
 .foo--ter {
     background-color: var(--lightblue-color);
@@ -103,7 +104,7 @@
 /*-----------------Desktop View---------------------*/
 @media only screen and (min-device-width:1024px) { 
     .book_appointment_form {
-        padding: 10rem 20rem;
+        padding: 10rem 26rem;
     }
     .foo--ter p {
         text-align: center;
