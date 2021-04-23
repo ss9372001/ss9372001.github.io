@@ -1,0 +1,82 @@
+
+/* -------------Doctor heading--------------- */
+.backimage {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 35vh; */
+    padding: 5rem 1.5rem;
+}
+.backimage h3, .backimage p {
+    color: var(--white-color);
+}
+/* --------------FAQ info--------------- */
+.faq_box {
+    border: 1px solid var(--bordergray-color);
+    padding: 0.6rem;
+}
+/* ----------------FAQ list---------------- */
+.left_head p {
+    margin-bottom: 0;
+    font-family: var(--ff-bold);
+    color: var(--vibblue-color);
+    font-size: 1.2rem;
+}
+.left_head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list_heading i {
+    color: var(--vibblue-color);
+}
+.list_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed var(--bordergray-color);
+    padding: 10px 0;
+}
+.last {
+    border-bottom: 1px dashed var(--bordergray-color);
+}
+.list_info {
+    border-top: 1px dashed var(--bordergray-color);
+    padding: 10px;
+    background-color: rgb(229,241,247);
+}
+.list_info p {
+    text-align: left;
+    margin-bottom: 0;
+}
+.fa-chevron-circle-up {
+    display: none;
+}
+.inactive {
+    display: none;
+}
+#down1 {
+    display: none;
+}
+#up1 {
+    display: block;
+}
+/*-----------------Tablet View---------------------*/
+@media only screen and (min-device-width:768px) {
+    .list_heading {
+        padding: 20px 0;
+    }
+    .list_info {
+        padding: 20px;
+    }
+}
+/*-------------------Desktop view---------------*/
+@media only screen and (min-device-width:1024px) {
+    .backimage {
+        padding: 5rem;
+    }
+    .backimage h3 {
+        text-align: left;
+    }
+}

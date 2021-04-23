@@ -1,0 +1,148 @@
+
+/* -------------Hospital heading--------------- */
+.backimage {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 35vh; */
+    padding: 5rem 1.5rem;
+}
+.backimage h3, .backimage p {
+    color: var(--white-color);
+}
+/* --------------Hospital info--------------- */
+.hospital_box {
+    border: 1px solid var(--bordergray-color);
+    padding: 0.6rem;
+}
+.info_hospital h4 {
+    color: var(--vibblue-color);
+    margin-bottom: 0;
+    font-family: var(--ff-bold);
+}
+.h3_line {
+    background-color: var(--vibblue-color);
+    width: 3rem;
+    height: 3px;
+}
+.info_hospital__title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transform: translateX(-0.6rem);
+}
+/* -------------Call Now button------------ */
+.call_now {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0.7rem;
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    padding: 0.7rem 2rem;
+    border: none;
+    width: 100%;
+} 
+/* ----------------Profile list---------------- */
+.left_head p {
+    margin-bottom: 0;
+    font-family: var(--ff-bold);
+    color: var(--vibblue-color);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.left_head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list_heading i {
+    color: var(--vibblue-color);
+}
+.list_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed var(--bordergray-color);
+    padding: 10px 0;
+}
+.last {
+    border-bottom: 1px dashed var(--bordergray-color);
+}
+.list_info {
+    border-top: 1px dashed var(--bordergray-color);
+    padding: 10px;
+    background-color: rgb(229,241,247);
+}
+.list_info p {
+    text-align: left;
+    margin-bottom: 0;
+}
+.fa-chevron-circle-up {
+    display: none;
+}
+.inactive {
+    display: none;
+}
+#down1 {
+    display: none;
+}
+#up1 {
+    display: block;
+}
+.hosptal_specification_list ul li i {
+    color: var(--vibblue-color);
+    margin-right: 0.5rem;
+}
+.hosptal_specification_list {
+    margin-bottom: 1rem;
+}
+.hosptal_specification_list ul li {
+    margin-bottom: 0.6rem;
+}
+.info_hospital p {
+    text-align: left;
+}
+/*-----------------Tablet View---------------------*/
+@media only screen and (min-device-width:768px) {
+    .hospital_box {
+        display: grid;
+        grid-template-columns: 60% 38%;
+        padding: 1.2rem;
+        column-gap: 20px;
+    }
+    .img_button {
+        grid-area: 1/2/ span 1/ span 1;
+    }
+    .info_hospital__title {
+        transform: translateX(-1.2rem);
+    }
+    .info_hospital  p {
+        text-align: left;
+    }
+    .list_heading {
+        padding: 20px 0;
+    }
+    .list_info {
+        padding: 20px;
+    }
+    .hosptal_specification_list ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+/*-------------------Desktop view---------------*/
+@media only screen and (min-device-width:1024px) {
+    .backimage {
+        padding: 5rem;
+    }
+    .backimage h3 {
+        text-align: left;
+    }
+    .hospital_box {
+        grid-template-columns: 72% 26%;
+    }
+}
