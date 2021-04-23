@@ -39,9 +39,6 @@
     background-color: var(--lightblue-color);
     padding: 1rem;
 }
-.contactus_grid {
-    margin-top: 1.5rem;
-}
 form {
     margin: 0 auto;
     background-color: var(--lightblue-color);
@@ -59,6 +56,12 @@ form {
     display: flex;
     justify-content: flex-end;
 }
+.line {
+    width: 100%;
+    background-color: var(--bordergray-color);
+    height: 2px;
+    margin-top: 2rem;
+}
 /* --------------Tablet view-------------- */
 @media only screen and (min-device-width:768px) {
     /* ---------------contact us--------------- */
@@ -69,9 +72,9 @@ form {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .address_list {
+    /* .address_list {
         margin-left: 5rem;
-    }
+    } */
     .contactform {
         padding: 1rem;
     }
@@ -100,9 +103,14 @@ form {
         display: flex;
         flex-direction: column;
     }
+    .address_list {
+        margin: 0;
+    }
     .contactus_grid {
         display: grid;
         grid-template-columns: 1fr 3fr;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
