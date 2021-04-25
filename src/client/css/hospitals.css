@@ -93,6 +93,7 @@ select {
     color: var(--white-color);
     padding: 0.7rem 2rem;
     border: none;
+    margin-bottom: 1rem;
 }
 .specifics div {
     border: 1px solid var(--gray-color);
@@ -106,6 +107,7 @@ select {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 0.8rem;
 }
 /* ------------Tablet view--------------- */
 @media only screen and (min-device-width:768px) {
@@ -164,6 +166,7 @@ select {
         bottom: 1rem;
         left: 3rem;
         position: absolute;
+        margin-bottom: 0;
     }
     .checkbox {
         margin-top: 20px;

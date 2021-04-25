@@ -104,7 +104,10 @@ form {
         flex-direction: column;
     }
     .address_list {
-        margin: 0;
+        margin-left: 0;
+    }
+    .firstlist li i {
+        margin-top: 0.3rem;
     }
     .contactus_grid {
         display: grid;

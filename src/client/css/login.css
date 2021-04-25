@@ -16,11 +16,11 @@ body {
 }
 .login_heading {
     background-color: var(--white-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-bottom: 1px solid var(--bordergray-color);
 
 }
-.login_heading h3 {
+.login_heading h5 {
     margin-bottom: 0;
     color: var(--doctors-color);
 }
@@ -75,7 +75,7 @@ body {
 }
 .foo--ter {
     background-color: var(--lightblue-color);
-    padding: 1rem;
+    padding: 1.2rem;
 }
 .foo--ter p {
     margin-bottom: 0;
@@ -95,7 +95,7 @@ body {
 /* ---------------Desktop view------------- */
 @media only screen and (min-device-width:1024px) {
     .loginform {
-        padding: 6.5rem 28rem;
+        padding: 7.6rem 28rem;
     }
     .login_footer p {
         text-align: center;

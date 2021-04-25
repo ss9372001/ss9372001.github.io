@@ -1,0 +1,569 @@
+/* <!-- -----------------------Heading section--------------------------- --> */
+.backgr_image {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 1rem 10rem 1rem;
+    position: relative;
+}
+.backgr_image h4 {
+    font-family: var(--ff-bold);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.plus {
+    background-color: var(--vibblue-color);
+    color: var(--white-color);
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0 auto 1rem auto;
+}
+/* ---------------------Gradient section-------------------- */
+.gradient {
+    background-image: linear-gradient(to bottom, var(--lightblue-color), var(--white-color));
+    height: 1400px;
+}
+.tvastra_plans {
+    background-color: var(--white-color);
+    border-radius: 6px;
+    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem;
+    position: absolute;
+    top: 44%;
+    left: 1rem;
+    right: 1rem;
+    margin: 0 auto;
+}
+.plans_heading {
+    padding: 1rem 0rem;
+    border-bottom: 1px solid var(--inactivetext-color);
+}
+.plan_head {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--inactivetext-color);
+}
+.plan_head h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.plan {
+    padding: 0.5rem 3rem;
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.plan button {
+    margin: 1rem auto;
+    display: flex;
+    padding: 10px 12px;
+}
+.plan_list {
+    margin-top: 1rem;
+}
+.plan_details {
+    color: var(--vibblue-color);
+    font-family: var(--ff-bold);
+}
+.foot {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.advanced_plan {
+    background-image: linear-gradient(to bottom, var(--lightblue-color), var(--white-color) );
+    position: relative;
+}
+.advanced_plan .plan_head {
+    border-bottom: 1px solid var(--gray-color);
+}
+.popular {
+    width: fit-content;
+    background-color: #008000;
+    color: var(--white-color);
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(105%, -80%);
+}
+/* ----------------Bars------------------ */
+.bars h5, .bars p{
+    margin-bottom: 1rem;
+}
+.review h2, .stars i, .review p {
+    color: var(--vibblue-color);
+}
+.bar_contain p {
+    color: var(--vibblue-color);
+    font-family: var(--ff-bold);
+}
+.review p {
+    margin-top: 0.6rem;
+}
+.stars {
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.stars i {
+    font-size: 0.6rem;
+}
+.bar {
+    background-color: var(--bordergray-color);
+    height: 14px;
+    width: 90%;
+    border-radius: 14px;
+}
+.bar_5, .bar_4, .bar_3, .bar_2,.bar_1 {
+    height: 14px;
+    border-radius: 14px;
+    background-color: var(--vibblue-color);
+}
+.bar_5 {
+    width: 70%;
+}
+.bar_4 , .bar_3{
+    width: 30%;
+}
+.bar_2 {
+    width: 20%;
+}
+.bar_1 {
+    width: 10%;
+}
+.bar_contain {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    height: 30px;
+}
+
+/* ------------Blocks--------------- */
+.blocks {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.block h3 i, .block h6, .block p, .block h3 {
+    color: var(--vibblue-color);
+    margin-bottom: 0;
+    text-align: center;
+}
+/* -----------------Benefits------------------- */
+.benefit_heading p {
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+}
+.border_line {
+    background-color: var(--lightblue-color);
+    width: 90%;
+    height: 5px;
+    border-radius: 14px;
+    margin: 0 auto;
+}
+.benefit {
+    margin: 1rem auto;
+}
+.benefit_list div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+}
+.benefit_list div p {
+    margin: 0;
+    text-align: left;
+}
+.benefit_list div i {
+    color: var(--lightblue-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.benefit_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+}
+.benefit_imgg h6 {
+    text-align: center;
+}
+.imgs {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+}
+.imgs img {
+    object-fit: contain;
+}
+.sakra, .artemis {
+    border-right: 1px solid var(--lightblue-color);
+    border-bottom: 1px solid var(--lightblue-color);
+}
+.birla {
+    border-right: 1px solid var(--lightblue-color);
+}
+.psri, .people_tree {
+    border-bottom: 1px solid var(--lightblue-color);
+}
+.benefit_imgg .more_hospitals {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.benefit__img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.3);
+}
+.benefit_heading .tests_included {
+    margin-top: 2rem;
+    font-family: var(--ff-bold);
+}
+/* ----------------Deficiency----------------- */
+.profile h6 {
+    text-align: center;
+} 
+.profile {
+    border-radius: 6px;
+    box-shadow: 0 2px 5px 2px rgba(63, 63, 63, 0.3);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+}
+.profile_img {
+    width: 60px;
+    height: 60px;
+    margin: 1rem auto;
+}
+.deficiency_profiles {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
+    margin: 1rem auto;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+/* ----------------Carousel-------------- */
+.carouses {
+    background-color: var(--bordergray-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carou {
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    justify-content: space-between;
+    margin: 1rem auto 0 auto;
+}
+.active {
+    background-color: var(--vibblue-color);
+}
+/* ----------------Used Plans--------------- */
+.user {
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 2px rgba(63, 63, 63, 0.3);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+.user p {
+    text-align: left;
+    font-family: var(--ff-bold);
+}
+.user_detail img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.used_plan {
+    background-color: rgb(204,227,240);
+    color: var(--vibblue-color);
+    font-family: var(--ff-bold);
+    font-size: 0.8rem;
+    width: fit-content;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+}
+.user_detail {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 10px;
+}
+.tvastra_head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+}
+.tvastra_head .plus {
+    margin: 0 0 0 0.6rem;
+}
+.users .last {
+    margin-bottom: 0;
+}
+/* -------------------faq----------------------- */
+.left_head p {
+    margin-bottom: 0;
+    font-family: var(--ff-bold);
+    color: var(--vibblue-color);
+    font-size: 1.1rem;
+}
+.left_head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list_heading i {
+    color: var(--vibblue-color);
+}
+.list_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.list_info {
+    border-top: 1px dashed var(--bordergray-color);
+    padding: 10px;
+    background-color: rgb(229,241,247);
+}
+.list_info p, .left_head p {
+    text-align: left;
+    margin-bottom: 0;
+}
+.list_heading .fa-chevron-circle-up {
+    display: none;
+}
+.inactive {
+    display: none;
+}
+#down1 {
+    display: none;
+}
+#up1 {
+    display: block;
+}
+/* -------------------Tablet view------------------ */
+@media only screen and (min-device-width:768px) {
+    .backgr_image {
+        padding: 2rem 1.8rem 14rem 1.8rem;
+    }
+    .backgr_image h4, .backgr_image p{
+        text-align: left;
+    }
+    .backgr_image .plus {
+        margin: 0 0 1rem 0;
+    }
+    .plans {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .plan {
+        height: auto;
+        padding: 0.5rem 2rem;
+    }
+    .plan_head {
+        padding: 1rem;
+    }
+    .popular {
+        transform: translate(2.8rem, -1.2rem);
+    }
+    .tvastra_plans {
+        top: 25%;
+        left: 1.8rem;
+        right: 1.8rem;
+    }
+    .gradient {
+        height: 500px;
+    }
+    /* -----------------Reviews----------------- */
+    .reviews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .review_bars {
+        width: 40%;
+    }
+    .bar_contain {
+        width: 80%;
+    }
+    .bars h5, .bars p {
+        margin-bottom: 2rem;
+    }
+    .blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .block {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .benefit_heading .membership {
+        margin: 2rem;
+        font-size: 1.3rem;
+    }
+    .border_line {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .benefit_head h5 {
+        text-align: left;
+    }
+    .benefit1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .benefit2, .benefit4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .benefit2 .benefit__img, .benefit4 .benefit__img {
+        grid-area: 1/1/span 1/ span 1;
+    }
+    .benefit3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .benefit {
+        margin-top: 2rem;
+    }
+    /* --------------Deficiency section------------- */
+    .profile {
+        width: 350px;
+        overflow: hidden;
+    }
+    /* ----------why we love tvastra---------- */
+    .tvastra_head {
+        justify-content: flex-start;
+    }
+    .users {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+    /* ------------faqs--------- */
+    .faqq h5 {
+        text-align: left;
+    }
+}
+
+/* -------------------Desktop view-------------- */
+@media only screen and (min-device-width:1024px) {
+    .backgr_image {
+        padding: 10rem 5rem 10rem 5rem;
+    }
+    .plans_heading {
+        padding: 2rem 0;
+    }
+    .tvastra_plans {
+        top: 55%;
+        left: 5rem;
+        right: 5rem;
+    }
+    .tvastra_plans p {
+        text-align: center;
+    }
+    .popular {
+        transform: translate(7.5rem, -1.4rem);
+    }
+    .plan {
+        padding: 0.5rem 4rem;
+    }
+    .gradient {
+        height: 600px;
+    }
+    /* ---------------Reviews--------------- */
+    .bars p {
+        text-align: center;
+    }
+    .bars_head {
+        width: 50%;
+        margin: 0 auto 2rem auto;
+    }
+    .review h2 {
+        text-align: center;
+    }
+    .review_bars {
+        width: 30%;
+    }
+    .bar_contain {
+        width: 70%;
+    }
+    .blocks {
+        width: 60vw;
+        margin: 1rem auto;
+    }
+    .border_line {
+        width: 30%;
+    }
+    .benefit1 {
+        grid-template-columns: 52% 30%;
+        column-gap: 225px; 
+    }
+    .benefit_head h5 {
+        font-size: 1.8rem;
+    }
+    .benefit2, .benefit4 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .benefit3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .benefit2 .benefit_head,.benefit3 .benefit_head, .benefit4 .benefit_head {
+        width: 600px;
+    }
+    .benefit2 .benefit__img, .benefit3 .benefit__img, .benefit4 .benefit__img {
+        width: 380px;
+    }
+    /* ------------------Deficiency------------------ */
+    .deficiency_profiles {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .profile {
+        width: 320px;
+    }
+    /* ------------------why we love tvastra--------------------- */
+    .tvastra_head h5 {
+        font-size: 1.8rem;
+    }
+    .users {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .user {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* ----------------faq---------------- */
+    .faqq h5 {
+        font-size: 1.8rem;
+    }
+}

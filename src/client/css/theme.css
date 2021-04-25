@@ -147,7 +147,7 @@ input[type=text],input[type=password],input[type=email], input[type=tel], input[
     width: 100%;
     font-size: var(--fs-a);
     font-family: var(--ff-light);
-    padding: 0.6rem 0.5rem;
+    padding: 0.4rem;
     border: none;
     outline: none;
     color: var(--darkblue-color);
@@ -160,10 +160,10 @@ textarea {
     height: 100px;
     font-size: var(--fs-a);
     font-family: var(--ff-light);
-    padding: 0.6rem 0.5rem;
+    padding: 0.4rem;
 }
 section, footer {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 ul>li, ol>li{
     font-size: var(--fs-a);
@@ -172,13 +172,18 @@ ul>li, ol>li{
     line-height: var(--li-lh);
 }
 nav {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+}
+select {
+    outline: none;
+    border: none;
 }
 select option {
-    font-family: 'nexa-light';
+    font-family: var(--ff-light);
     font-size: var(--fs-a);
     color: var(--darkblue-color);
     line-height: var(--hh-lh);
+    
 }
 @media only screen and (min-device-width:768px) {
     :root {
@@ -224,7 +229,10 @@ select option {
         padding: 1rem 1.8rem;
     }
     input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date] {
-        padding: 0.73rem 1.5rem;
+        padding: 0.5rem;
+    }
+    textarea {
+        padding: 0.5rem;
     }
     select option {
         font-size: var(--fs-a);
@@ -281,7 +289,10 @@ select option {
         line-height: 1.6rem;
     }
     input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date]  {
-        padding: 0.72rem 1.5rem;
+        padding: 0.6rem;
+    }
+    textarea {
+        padding: 0.6rem;
     }
     select option {
         font-size: var(--fs-p);

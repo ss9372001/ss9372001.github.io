@@ -45,7 +45,7 @@
 
         <div class="shadow">
             <div class="signup_heading">
-                <h3>Sign Up</h3>
+                <h5>Sign Up</h5>
             </div>
             <form action="submit" class="signup">
                 
@@ -59,8 +59,12 @@
                     <input type="password" placeholder="Enter Password">
                 </div>
                 <div class="input4">
-                    <input type="text" placeholder="Enter your Gender">
-                    <button type="button"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <select name="gender" id="gender">
+                        <option value="gender">Enter your Gender here</option>
+                        <option value="male">MALE</option>
+                        <option value="female">FEMALE</option>
+                        <option value="others">OTHERS</option>
+                    </select> 
                 </div>
                 <div class="input5">
                     <input type="date" placeholder="dd/mm/yyyy">
@@ -71,14 +75,19 @@
                 <div class="input7and8">
                     <div class="input7">
                         <input type="text" placeholder="Enter City">
+                        
                     </div>
                     <div class="input8">
                         <input type="text" placeholder="Enter State">
                     </div>
                 </div>
                 <div class="input9">
-                    <input type="text" placeholder="Select Your Country">
-                    <button type="button"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <select name="country" id="country">
+                        <option value="gender">Select Your Country</option>
+                        <option value="india">INDIA</option>
+                        <option value="england">ENGLAND</option>
+                        <option value="australia">AUSTRALIA</option>
+                    </select>
                 </div>
                 <div class="signupbutton">
                     <div></div>

@@ -12,10 +12,10 @@
 }
 .signup_heading {
     background-color: var(--white-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-bottom: 1px solid var(--bordergray-color);
 }
-.signup_heading h3 {
+.signup_heading h5 {
     margin-bottom: 0;
     color: var(--doctors-color);
 }
@@ -27,6 +27,16 @@
     padding: 4px;
     border: 1px solid var(--gray-color);
     margin: 16px auto;
+}
+.input4 select option, .input9 select option {
+    color: var(--gray-color);
+}
+.input4 select , .input9 select{
+    width: 100%;
+    padding: 4px;
+}
+.input4, .input9 {
+    padding: 11px 4px;
 }
 .input7, .input8  {
     width: 100%;
@@ -78,7 +88,7 @@
 }
 .foo--ter {
     background-color: var(--lightblue-color);
-    padding: 1rem;
+    padding: 1.2rem;
 }
 .foo--ter p {
     margin-bottom: 0;

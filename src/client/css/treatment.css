@@ -4,7 +4,6 @@
     background-image: linear-gradient(to right, rgb(43, 132, 192),rgba(62, 112, 145,0)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 37vh;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -223,8 +222,8 @@
         column-gap: 30px;
         width: 100%;
     }
-    .backg_img p  {
-        text-align: center;
+    .backg_img h3  {
+        text-align: left;
     }
     .service_details {
         grid-area: 1 /2 /span 2/ span 1;
