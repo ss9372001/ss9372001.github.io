@@ -1,6 +1,9 @@
-
+header nav {
+    background-color: var(--white-color);
+}
 body {
     height: 100vh;
+    background-color: var(--lightblue-color);
 }
 /* -----------Loginpage section---------- */
 .loginform {
@@ -38,7 +41,7 @@ body {
 }
 .loginbutton {
     width: 100%;
-    padding: 7px;
+    padding: 5px;
     background-color: var(--darkblue-color);
     margin-left: auto;
     margin-right: auto;

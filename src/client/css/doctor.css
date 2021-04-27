@@ -34,6 +34,7 @@
     }
 /* -------------------------filter section stylings-------------------------------- */
 
+
     /* --------------Selected filter styles---------------- */
     .selected_filters {
         margin: 1rem 0;
@@ -247,6 +248,9 @@
     /* ------------------cardiac surgeon section -------------------------*/
     .cardiac_surgeons {
         padding: 6rem 5rem;
+    }
+    .checkbox ul li input {
+        margin-top: 0.4rem;
     }
     /* -----------doctors section---------- */
 
