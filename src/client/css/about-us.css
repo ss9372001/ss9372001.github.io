@@ -16,7 +16,7 @@
     width: 60vw;
     margin: 20px auto;
 }
-.texxt h4 {
+.texxt h33 {
     font-family: var(--ff-bold);
     text-align: center;
     margin-bottom: 1rem;
@@ -30,7 +30,7 @@ video {
 .freecheckup {
     background-color: black;
 }
-.freecheckup h4 {
+.freecheckup h3 {
     color: var(--white-color);
     font-family: var(--ff-bold);
     text-align: center;
@@ -59,7 +59,7 @@ video {
 .join_our_team {
     background-color: var(--lightblue-color);
 }
-.jointeam_headings h4 {
+.jointeam_headings h2 {
     color: var(--white-color);
     font-family: var(--ff-bold);
     text-align: center;
@@ -92,11 +92,11 @@ video {
         align-self: start;
         margin: 0;
     }
-    .texxt h4, .texxt p {
+    .texxt h3, .texxt p {
         text-align: left;
     }
     /* -----------------free checkup-------------- */
-    .freecheckup h4, .freecheckup p {
+    .freecheckup h3, .freecheckup p {
         text-align: left;
     }
     .freecheckup button {
@@ -122,7 +122,7 @@ video {
         padding: 10rem 5rem;
         background-position: top;
     }
-    .healthyimg p, .healthyimg h1        {
+    .healthyimg p, .healthyimg h1 {
         text-align: center;
     }
     /* ----------------about us------------- */
@@ -133,7 +133,6 @@ video {
     }
     .about-img {
         height: 500px;
-        /* width: 100%; */
         margin: 0;
         grid-area: 1 / 2 / span 2/ span 1;
     }
@@ -180,7 +179,7 @@ video {
         justify-content: space-between;
         align-items: center;
     }
-    .jointeam_headings h4 {
+    .jointeam_headings h2 {
         text-align: left;
     }
     .jointeam_button {

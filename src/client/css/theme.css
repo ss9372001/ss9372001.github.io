@@ -16,10 +16,14 @@
 }
   :root {
       --darkblue-color: #021433 ;
+      --button-color: #2A2D3E;
       --lightblue-color: #93BEDE;
+      --exclusiveservice-bg-color: #F5F5F5;
       --white-color: #ffffff;
+      --black-color: black;
       --lightgray-color: #ececec;
       --darklightblue-color:  #2781DE;
+      --formheading-color: #1E73B2;
       --vibblue-color: #0173B2;
       --doctors-color: #0099FF;
       --treatment-color: #CCE3F0;
@@ -27,18 +31,13 @@
       --inactivetext-color:  #d1d1d1;
       --gray-color: #cccccc;
       --footer-color: #797a7a;
-      --buttonhover-color: rgba(32, 30, 51, 0.4);
-      --fs-h1: 2rem;
-      --fs-h3: 1.8rem;
-      --fs-h4: 1.6rem;
-      --fs-h5: 1.4rem;
+      --fs-h1: 1.8rem;
+      --fs-h3: 1.6rem;
+      --fs-h4: 1.4rem;
+      --fs-h5: 1.2rem;
       --fs-h6: 1.1rem;
       --fs-p: 0.9rem;
       --fs-a: 0.9rem;
-      --h1-lh: 2rem;
-      --hh-lh: 1rem;
-      --p-lh: 1.2rem;
-      --li-lh: 1.1rem;
       --ff-light: 'nexa-light';
       --ff-bold: 'nexa-bold';
       
@@ -61,7 +60,7 @@ h1, h2 {
 }
 h3 {
     font-size: var(--fs-h3);
-    line-height: 2.2rem;
+    line-height: 1.8rem;
 }
 h4 {
     font-size: var(--fs-h4);
@@ -112,7 +111,7 @@ button {
 }
 button:hover {
     cursor: pointer;
-    background-color: var(--buttonhover-color);
+    opacity: 0.6;
 }
 form {
     width: 100%;
@@ -187,11 +186,11 @@ select option {
 }
 @media only screen and (min-device-width:768px) {
     :root {
-        --fs-h1: 2.1rem;
-        --fs-h3: 1.9rem;
-        --fs-h4: 1.7rem;
-        --fs-h5: 1.5rem;
-        --fs-h6: 1.3rem;
+        --fs-h1: 2rem;
+        --fs-h3: 1.8rem;
+        --fs-h4: 1.6rem;
+        --fs-h5: 1.4rem;
+        --fs-h6: 1.2rem;
         --fs-p: 1rem;
         --fs-a: 0.9rem;
     }
@@ -266,14 +265,12 @@ select option {
     }
     h3 {
         font-size: var(--fs-h3);
-        line-height: 3rem;
     }
     h4 {
         font-size: var(--fs-h4);
     }
     h5 {
         font-size: var(--fs-h5);
-        line-height: 2rem;
         word-spacing: 0.2rem;
     }
     h6 {

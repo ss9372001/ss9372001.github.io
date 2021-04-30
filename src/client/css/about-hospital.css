@@ -8,7 +8,7 @@
     /* height: 35vh; */
     padding: 5rem 1.5rem;
 }
-.backimage h3, .backimage p {
+.backimage h1, .backimage p {
     color: var(--white-color);
 }
 /* --------------Hospital info--------------- */
@@ -16,7 +16,7 @@
     border: 1px solid var(--bordergray-color);
     padding: 0.6rem;
 }
-.info_hospital h4 {
+.info_hospital h5 {
     color: var(--vibblue-color);
     margin-bottom: 0;
     font-family: var(--ff-bold);
@@ -95,13 +95,16 @@
 }
 .hosptal_specification_list ul li i {
     color: var(--vibblue-color);
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    justify-content: center;
 }
 .hosptal_specification_list {
     margin-bottom: 1rem;
 }
 .hosptal_specification_list ul li {
     margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
 }
 .info_hospital p {
     text-align: left;
@@ -111,14 +114,14 @@
     .hospital_box {
         display: grid;
         grid-template-columns: 60% 38%;
-        padding: 1.2rem;
+        padding: 2rem;
         column-gap: 20px;
     }
     .img_button {
         grid-area: 1/2/ span 1/ span 1;
     }
     .info_hospital__title {
-        transform: translateX(-1.2rem);
+        transform: translateX(-2rem);
     }
     .info_hospital  p {
         text-align: left;
@@ -129,9 +132,15 @@
     .list_info {
         padding: 20px;
     }
+    .left_head p {
+        font-size: 1.3rem;
+    }
     .hosptal_specification_list ul {
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .h3_line {
+        width: 2rem;
     }
 }
 /*-------------------Desktop view---------------*/
@@ -139,10 +148,10 @@
     .backimage {
         padding: 5rem;
     }
-    .backimage h3 {
-        text-align: left;
-    }
     .hospital_box {
         grid-template-columns: 72% 26%;
+    }
+    .left_head p {
+        font-size: 1.4rem;
     }
 }

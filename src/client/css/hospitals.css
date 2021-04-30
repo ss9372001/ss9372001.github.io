@@ -78,6 +78,9 @@ select {
 }
 .list li {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .list .fa {
     color: var(--doctors-color);
@@ -147,7 +150,7 @@ select {
         width: 2.5rem;
     }
     .list {
-        margin-left: 3rem;
+        margin-left: 2.4rem;
     }
     .hospitals .left_info .list {
         display: grid;
@@ -175,7 +178,6 @@ select {
     .checkbox li {
         display: flex;
         align-content: center;
-        margin-bottom: 0.5rem;
     }
     .checkbox label {
         margin-left: 1rem;
@@ -217,7 +219,7 @@ select {
     }
     .call_now {
         font-size: 1rem;
-        padding: 1rem 3.2rem;
+        padding: 0.8rem 3rem;
         border-radius: 2px;
     }
 }

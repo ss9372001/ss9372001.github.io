@@ -5,10 +5,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 35vh; */
     padding: 5rem 1.5rem;
 }
-.backimage h3, .backimage p {
+.backimage h1, .backimage p {
     color: var(--white-color);
 }
 /* --------------Doctor info--------------- */
@@ -16,7 +15,7 @@
     border: 1px solid var(--bordergray-color);
     padding: 0.6rem;
 }
-.info_doc h4 {
+.info_doc h5 {
     color: var(--vibblue-color);
     margin-bottom: 0;
     font-family: var(--ff-bold);
@@ -98,14 +97,14 @@
     .doctor_box {
         display: grid;
         grid-template-columns: 60% 38%;
-        padding: 1.2rem;
+        padding: 2rem;
         column-gap: 20px;
     }
     .img_button {
         grid-area: 1/2/ span 1/ span 1;
     }
     .info_doc__title {
-        transform: translateX(-1.2rem);
+        transform: translateX(-2rem);
     }
     .info_doc  p {
         text-align: left;
@@ -116,6 +115,12 @@
     .list_info {
         padding: 20px;
     }
+    .left_head p {
+        font-size: 1.3rem;
+    }
+    .h3_line {
+        width: 2rem;
+    }
 }
 
 /*-------------------Desktop view---------------*/
@@ -123,10 +128,10 @@
     .backimage {
         padding: 5rem;
     }
-    .backimage h3 {
-        text-align: left;
-    }
     .doctor_box {
         grid-template-columns: 72% 26%;
+    }
+    .left_head p {
+        font-size: 1.4rem;
     }
 }

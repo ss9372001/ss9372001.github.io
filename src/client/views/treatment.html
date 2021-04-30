@@ -41,7 +41,7 @@
 </header>
     <!-- --------------BAckground image of treatment-------------- -->
     <section class="backg_img">
-        <h3>Dentistry</h3>
+        <h1>Dentistry</h1>
         <p>Home / Dentistry</p>
     </section>
     <!-- ----------------Treatment section-------------------- -->
@@ -123,39 +123,67 @@
     <!-- -----------------More services------------------- -->
     <section class="more_services">
         <div class="services_heading">
-            <h3>More Services</h3>
+            <h2>More Services</h2>
             <div class="arrows">
-                <div class="leftarrow">
+                <div class="leftarrow" id="next-btn">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
                 </div>
-                <div class="rightarrow">
+                <div class="rightarrow" id="prev-btn">
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
             <div class="more_services_types">
-                <div class="service_type">
-                    <div class="service_img">
-                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="">
+                <div class="slidee slidee--visible">
+                    <div class="service_type">
+                        <div class="service_img">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="">
+                        </div>
+                        <div class="service_foot">
+                            <h6>Orthopedic Surgery</h6>
+                        </div>
                     </div>
-                    <div class="service_foot">
-                        <h6>Orthopedic Surgery</h6>
+                    <div class="service_type">
+                        <div class="service_img">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="">
+                        </div>
+                        <div class="service_foot">
+                            <h6>Cancer</h6>
+                        </div>
+                    </div>
+                    <div class="service_type">
+                        <div class="service_img">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="">
+                        </div>
+                        <div class="service_foot">
+                            <h6>Cardiology</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="service_type">
-                    <div class="service_img">
-                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="">
+                <div class="slidee">
+                    <div class="service_type">
+                        <div class="service_img">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="">
+                        </div>
+                        <div class="service_foot">
+                            <h6>Dentistry</h6>
+                        </div>
                     </div>
-                    <div class="service_foot">
-                        <h6>Cancer</h6>
+                    <div class="service_type">
+                        <div class="service_img">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="">
+                        </div>
+                        <div class="service_foot">
+                            <h6>Multi Organ Transplant</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="service_type">
-                    <div class="service_img">
-                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="">
-                    </div>
-                    <div class="service_foot">
-                        <h6>Cardiology</h6>
+                    <div class="service_type">
+                        <div class="service_img">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="">
+                        </div>
+                        <div class="service_foot">
+                            <h6>Infertility Treatment</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,5 +229,7 @@
     </footer>
     
     <div class="footer_blueline"></div>
+
+    <script src="../javascript/treatment_carousel.js"></script>
 </body>
 </html>

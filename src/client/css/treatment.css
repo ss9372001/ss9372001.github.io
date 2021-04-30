@@ -7,14 +7,14 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
-.backg_img h3, .backg_img p {
+.backg_img h1, .backg_img p {
     color: var(--white-color);
 }
 /* ----------------Treatment section----------------- */
 .dentistry {
     display: grid;
     grid-template-rows: auto auto auto;
-    row-gap: 40px;
+    row-gap: 20px;
 }
 /* -------------Vaccination section------------- */
     .vaccination {
@@ -114,8 +114,9 @@
 /* -------------More services--------------- */
 .more_services {
     background-color: var(--lightblue-color);
+    overflow: initial;
 }
-.more_services h3 {
+.more_services h2 {
     color: var(--white-color);
 }
 .leftarrow, .rightarrow {
@@ -124,6 +125,7 @@
     border-radius: 100%;
     padding: 10px 8px 10px 12px;
     background-color: var(--white-color);
+    cursor: pointer;
 }
 .leftarrow {
     margin-right: 1rem;
@@ -164,13 +166,15 @@
     top: 0.6rem;
     left: -1.2rem;
 }
-.more_services_types {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 10px;
+.more_services_types .slidee, .more_services_types .slidee--hidden {
+    display: none;
 }
-
+.more_services_types .slidee--visible {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 15px;
+}
 /* ---------------Tablet view------------------- */
 @media only screen and (min-device-width:768px) {
     .img_info {
@@ -182,7 +186,6 @@
         text-align: left;
     }
     .types {
-        /* width: 100%; */
         display: grid;
         grid-template-columns: 35% 30% 30%;
         column-gap: 20px;
@@ -194,6 +197,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
+        row-gap: 0;
     }
     .schedule, .service {
         height: fit-content;
@@ -205,11 +209,10 @@
         justify-content: space-between;
         align-items: center;
     }
-    .more_services_types {
+    .more_services_types .slidee--visible {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100%;
-        column-gap: 10px;
+        column-gap: 15px;
     }
     
 }
@@ -231,6 +234,9 @@
     }
     .types {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .service_type {
+        width: 443px;
     }
     .service_details {
         display: flex;

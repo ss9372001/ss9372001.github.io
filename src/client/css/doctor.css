@@ -99,6 +99,9 @@
     .list li {
         /* font-size: 1rem; */
         margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     .list .fa {
         color: var(--doctors-color);
@@ -138,8 +141,7 @@
         font-family: 'nexa-light';
         font-size: 1.6rem;
         text-align: left;
-        font-weight: bolder;
-        /* margin-top: 5rem; */
+        font-weight: bold;
     }
     .cardiac_surgeons span {
         text-decoration: underline;
@@ -197,12 +199,11 @@
         width: 2.5rem;
     }
     .list {
-        margin-left: 3rem;
+        margin-left: 2.4rem;
     }
     .doctors .left_info .list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* row-gap: 10px; */
         margin-top: 20px;
     }
     .img_iml1 {
@@ -253,11 +254,6 @@
         margin-top: 0.4rem;
     }
     /* -----------doctors section---------- */
-
-        /* filter section */
-        /* .doctors_filters_grid {
-            grid-template-columns: 20% 78.5%;
-        } */
         .doctors .title {
             margin-top: 2.5rem;
         }

@@ -41,55 +41,37 @@ options.forEach(el=>{
 
 // Expert doctors section starts
 
-function replace(){
-    var a= document.getElementById("div4");
-    var b= document.getElementById("div3");
-    var c= document.getElementById("div2");
-    var d= document.getElementById("div1");
-    var temp=a.innerHTML;
+
+var buttonsWrapper = document.getElementById("circle");
+var a = document.getElementById("div1");
+var b = document.getElementById("div2");
+var c = document.getElementById("div3");
+var d = document.getElementById("div4");
+function change(){
+    var x=a.innerHTML;
     a.innerHTML=b.innerHTML;
     b.innerHTML=c.innerHTML;
     c.innerHTML=d.innerHTML;
-    d.innerHTML=temp;
+    d.innerHTML=x;
 }
-// const buttonsWrapper = document.getElementById("circle");
-// const slides = document.getElementById("container");
-
-// buttonsWrapper.addEventListener("click", e => {
-//   if (e.target.nodeName === "DIV") {
-//     Array.from(buttonsWrapper.children).forEach(item =>
-//       item.classList.remove("blue_circle")
-//     );
-//     if (e.target.classList.contains("carousel1")) {
-//       slides.style.transform = "translateX(-0%)";
-//       e.target.classList.add("blue_circle");
-//     } else if (e.target.classList.contains("carousel2")) {
-//       slides.style.transform = "translateX(-25%)";
-//       e.target.classList.add("blue_circle");
-//     } else if (e.target.classList.contains('carousel3')){
-//       slides.style.transform = 'translatex(-50%)';
-//       e.target.classList.add('blue_circle');
-//     } else if (e.target.classList.contains('carousel4')){
-//         slides.style.transform = 'translatex(-75%)';
-//         e.target.classList.add('blue_circle');
-//       }
-//   }
-// });
-
-var container=document.getElementById("circle");
-
-var carousels=container.getElementsByClassName("carousel");
-
-for(var i=0;i<carousels.length;i++){
-    carousels[i].addEventListener('click', function(){
-        var current=document.getElementsByClassName("blue_circle");
-        // console.log(current);
-        current[0].className=current[0].className.replace(" blue_circle", "");
-        this.className += " blue_circle";
-        
-    });
-}
-
+buttonsWrapper.addEventListener("click", e => {
+    Array.from(buttonsWrapper.children).forEach(item =>
+        item.classList.remove("blue_circle")
+    );
+    if(e.target.classList.contains("carousel1")) {
+        setTimeout(change, 200);
+        e.target.classList.add("blue_circle");
+    } else if(e.target.classList.contains("carousel2")) {
+        setTimeout(change, 200);
+        e.target.classList.add("blue_circle");
+    } else if(e.target.classList.contains("carousel3")) {
+        setTimeout(change, 200);
+        e.target.classList.add("blue_circle");
+    } else if(e.target.classList.contains("carousel4")) {
+        setTimeout(change, 200);
+        e.target.classList.add("blue_circle");
+    }
+})
 //  Expert doctors section ends
 
 
