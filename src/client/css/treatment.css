@@ -4,6 +4,7 @@
     background-image: linear-gradient(to right, rgb(43, 132, 192),rgba(62, 112, 145,0)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }

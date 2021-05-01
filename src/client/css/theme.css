@@ -56,11 +56,11 @@ h1, h2, h3, h5 {
 }
 h1, h2 {
     font-size: var(--fs-h1);
-    line-height: var(--h1-lh);
+    line-height: 2.2rem;
 }
 h3 {
     font-size: var(--fs-h3);
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 h4 {
     font-size: var(--fs-h4);
@@ -68,12 +68,12 @@ h4 {
 }
 h5 {
     font-size: var(--fs-h5);
-    line-height: 2rem;
+    line-height: 1.6rem;
 }
 h6 {
     font-size: var(--fs-h6);
     font-family: var(--ff-bold);
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     margin-bottom: 0.6rem;
 }
 p {
@@ -82,7 +82,7 @@ p {
     font-size: var(--fs-p);
     margin-bottom: 0.8rem;
     text-align: center;
-    line-height: var(--p-lh);
+    line-height: 1.3rem;
     letter-spacing: 0.01rem;
 }
 a {
@@ -140,7 +140,6 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-fit: contain; */
 }
 input[type=text],input[type=password],input[type=email], input[type=tel], input[type=date] {
     width: 100%;
@@ -168,7 +167,7 @@ ul>li, ol>li{
     font-size: var(--fs-a);
     color: var(--darkblue-color);
     margin: 0.1rem 0;
-    line-height: var(--li-lh);
+    line-height: 1.5rem;
 }
 nav {
     padding: 1rem;
@@ -181,7 +180,7 @@ select option {
     font-family: var(--ff-light);
     font-size: var(--fs-a);
     color: var(--darkblue-color);
-    line-height: var(--hh-lh);
+    line-height: 1.5rem;
     
 }
 @media only screen and (min-device-width:768px) {
