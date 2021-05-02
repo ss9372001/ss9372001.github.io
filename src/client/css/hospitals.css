@@ -22,7 +22,7 @@ select {
 .hospitals_filters_grid {
     margin-top: 30px;
 }
-/* filter section */
+/*------------------------ filter section -------------------*/
 .selected_filters {
     margin: 1rem 0;
     display: flex;
@@ -31,12 +31,12 @@ select {
 }
 .selected_filters div {
     border: 1px solid var(--bordergray-color);
-    border-radius: 12px;
+    border-radius: 10px;
     font-size: 0.9rem;
     padding: 6px;
     width: max-content;
-    margin-right: 0.4rem;
-    margin-bottom: 0.4rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 .selectedfilters {
     display: none;
@@ -60,6 +60,7 @@ select {
 .blue__line {
     width: 1.5rem;
     height: 2px;
+    margin-right: 0.3rem;
     background-color: var(--doctors-color);
 }
 .title {
@@ -73,11 +74,11 @@ select {
     margin: 0;
 }
 .list {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 .list li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -102,15 +103,20 @@ select {
     border: 1px solid var(--gray-color);
     width: fit-content;
     padding: 6px;
-    border-radius: 10px;
-    margin-bottom: 0.4rem;
-    margin-right: 0.4rem;
+    border-radius: 15px;
+    margin-bottom: 0.2rem;
+    margin-right: 0.2rem;
 }
 .specifics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0.8rem;
+    margin-top: 0.8rem;
+}
+.filter_list_heading .headinng {
+    font-weight: bold;
+    font-family: var(--ff-light);
 }
 /* ------------Tablet view--------------- */
 @media only screen and (min-device-width:768px) {
@@ -167,7 +173,7 @@ select {
     }
     .call_now {
         bottom: 1rem;
-        left: 3rem;
+        left: 2.4rem;
         position: absolute;
         margin-bottom: 0;
     }
@@ -177,7 +183,7 @@ select {
     }
     .checkbox li {
         display: flex;
-        align-content: center;
+        align-items: center;
     }
     .checkbox label {
         margin-left: 1rem;
@@ -208,8 +214,8 @@ select {
         grid-template-columns: 23% 75.3%;
         column-gap: 20px;
     }
-    .checkbox ul li input {
-        margin-top: 0.4rem;
+    .search-location-minus  .fa-search {
+        margin-right: 1rem;
     }
     .headinng {
         font-size: 1.1rem;

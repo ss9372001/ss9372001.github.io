@@ -48,8 +48,8 @@
         font-size: 0.9rem;
         padding: 6px;
         width: max-content;
-        margin-right: 0.4rem;
-        margin-bottom: 0.4rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.2rem;
     }
     .selectedfilters {
         display: none;
@@ -64,6 +64,10 @@
 /* ----------------Headings for all filters------------------ */
 .filter_list_heading h6 {
     margin-bottom: 0;
+}
+.filter_list_heading .headinng {
+    font-weight: bold;
+    font-family: var(--ff-light);
 }
 
 /* -------------------------doctor boxes--------------------------------- */
@@ -86,7 +90,7 @@
         margin: 0;
     }
     .blue__line {
-        width: 1.5rem;
+        width: 2rem;
         height: 2px;
         background-color: var(--doctors-color);
     }
@@ -96,10 +100,12 @@
         margin-top: 10px;
         margin-bottom: 1rem;
     }
+    .img_iml1 {
+        height: 365px;
+    }
     .list li {
-        /* font-size: 1rem; */
-        margin-bottom: 10px;
         display: flex;
+        margin-bottom: 5px;
         justify-content: flex-start;
         align-items: center;
     }
@@ -173,6 +179,9 @@
     .search-location-minus {
         display: flex;
     }
+    .search-location-minus  .fa-search {
+        margin-right: 1rem;
+    }
     .filter_list_heading {
         display: flex;
         flex-direction: row;
@@ -180,6 +189,7 @@
         align-items: center;
         margin-top: 1rem;
         margin-left: 12px;
+        margin-right: 12px;
     }
     .headinng {
         font-size: 1.1rem;
@@ -187,8 +197,8 @@
     /* -------------------Doctors grid-------------------- */
     .doctors {
         display: grid;
-        grid-template-columns: 68% 31%;
-        column-gap: 10px;
+        grid-template-columns: 66% 33%;
+        column-gap: 5px;
         padding-top: 0;
         position: relative;
     }
@@ -196,7 +206,8 @@
         margin-top: 20px;
     }
     .blue__line {
-        width: 2.5rem;
+        width: 2rem;
+        margin-right: 0.5rem;
     }
     .list {
         margin-left: 2.4rem;
@@ -207,11 +218,11 @@
         margin-top: 20px;
     }
     .img_iml1 {
-        height: 260px;
+        height: 280px;
     }
     .book_an_appointment {
         bottom: 1rem;
-        left: 3rem;
+        left: 2.4rem;
         position: absolute;
         font-size: 1rem;
     }
@@ -226,7 +237,8 @@
     }
     .checkbox li {
         display: flex;
-        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
     }
     .checkbox label {
         margin-left: 1rem;
@@ -249,9 +261,6 @@
     /* ------------------cardiac surgeon section -------------------------*/
     .cardiac_surgeons {
         padding: 6rem 5rem;
-    }
-    .checkbox ul li input {
-        margin-top: 0.4rem;
     }
     /* -----------doctors section---------- */
         .doctors .title {

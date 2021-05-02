@@ -28,12 +28,14 @@
     border: 1px solid var(--gray-color);
     margin: 16px auto;
 }
-.input4 select option, .input9 select option {
-    color: var(--gray-color);
-}
 .input4 select , .input9 select{
     width: 100%;
-    padding: 4px;
+    padding: 0 4px;
+    color: var(--footer-color);
+    background-color: var(--white-color);
+}
+.input5 input {
+    color: var(--footer-color);
 }
 .input4, .input9 {
     padding: 11px 4px;

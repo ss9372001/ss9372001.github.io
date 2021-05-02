@@ -167,7 +167,7 @@ ul>li, ol>li{
     font-size: var(--fs-a);
     color: var(--darkblue-color);
     margin: 0.1rem 0;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 nav {
     padding: 1rem;
@@ -175,6 +175,8 @@ nav {
 select {
     outline: none;
     border: none;
+    font-family: var(--ff-light);
+    font-size: var(--fs-a);
 }
 select option {
     font-family: var(--ff-light);
