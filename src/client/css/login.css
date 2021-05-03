@@ -16,33 +16,33 @@ body {
     background-color: var(--white-color);
 }
 .shadow {
-    box-shadow: 5px 2px 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 0.313rem 0.125rem 0.313rem 0.125rem rgba(0,0,0,0.3);
 }
 .login_heading {
     background-color: var(--white-color);
     padding: 1.5rem;
-    border-bottom: 1px solid var(--bordergray-color);
+    border-bottom: 0.063rem solid var(--bordergray-color);
 
 }
 .login_heading h5 {
     margin-bottom: 0;
-    color: var(--doctors-color);
+    color: var(--darklightblue-color);
 }
 .input1, .input2 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4px;
-    border: 1px solid var(--gray-color);
-    margin: 16px auto;
+    padding: 0.25rem;
+    border: 0.063rem solid var(--gray-color);
+    margin: 1rem auto;
 }
 .fa-question-circle {
     color: var(--gray-color);
 }
 .loginbutton {
     width: 100%;
-    padding: 5px;
+    padding: 0.313rem;
     background-color: var(--darkblue-color);
     margin-left: auto;
     margin-right: auto;
@@ -53,9 +53,8 @@ body {
     align-content: center;
 }
 .login_button {
-    background-color: var(--darkblue-color);
-    color: var(--white-color);
     font-size: 0.9rem;
+    letter-spacing: 0.15rem;
 }
 .fa-arrow-right {
     color: var(--white-color);
@@ -74,7 +73,7 @@ body {
 }
 .login_footer a {
     font-size: 0.7rem;
-    color: var(--doctors-color);
+    color: var(--darklightblue-color);
     font-weight: bolder;
 }
 .foo--ter {
@@ -94,7 +93,6 @@ body {
 /* ------------Tablet view----------- */
 @media only screen and (min-device-width:768px) {
  .loginform {
-     margin-bottom: -1px;
      padding: 10rem 9rem;
  }
 }

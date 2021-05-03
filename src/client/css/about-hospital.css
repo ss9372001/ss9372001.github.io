@@ -13,18 +13,19 @@
 }
 /* --------------Hospital info--------------- */
 .hospital_box {
-    border: 1px solid var(--bordergray-color);
+    border: 0.063rem solid var(--bordergray-color);
     padding: 0.6rem;
 }
-.info_hospital h5 {
+.info_hospital h4 {
     color: var(--vibblue-color);
     margin-bottom: 0;
     font-family: var(--ff-bold);
 }
 .h3_line {
     background-color: var(--vibblue-color);
-    width: 3rem;
-    height: 3px;
+    width: 1.9rem;
+    height: 0.15rem;
+    margin-right: 0.3rem;
 }
 .info_hospital__title {
     display: flex;
@@ -40,18 +41,13 @@
     justify-content: center;
     margin: auto;
     margin-top: 0.7rem;
-    background-color: var(--darkblue-color);
-    color: var(--white-color);
-    padding: 0.7rem 2rem;
-    border: none;
     width: 100%;
 } 
 /* ----------------Profile list---------------- */
-.left_head p {
+.left_head h6 {
     margin-bottom: 0;
     font-family: var(--ff-bold);
     color: var(--vibblue-color);
-    font-size: 1.2rem;
     margin-left: 1rem;
 }
 .left_head {
@@ -66,11 +62,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px dashed var(--bordergray-color);
+    border-top: 0.063rem dashed var(--bordergray-color);
     padding: 10px 0;
 }
 .last {
-    border-bottom: 1px dashed var(--bordergray-color);
+    border-bottom: 0.063rem dashed var(--bordergray-color);
 }
 .list_info {
     border-top: 1px dashed var(--bordergray-color);
@@ -115,7 +111,7 @@
         display: grid;
         grid-template-columns: 60% 38%;
         padding: 2rem;
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
     .img_button {
         grid-area: 1/2/ span 1/ span 1;
@@ -127,20 +123,21 @@
         text-align: left;
     }
     .list_heading {
-        padding: 20px 0;
+        padding: 1.25rem 0;
     }
     .list_info {
-        padding: 20px;
-    }
-    .left_head p {
-        font-size: 1.3rem;
+        padding: 1.25rem;
     }
     .hosptal_specification_list ul {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1.5rem;
+    }
+    .hospital {
+        height: 10rem;
     }
     .h3_line {
-        width: 2rem;
+        width: 1.9rem;
     }
 }
 /*-------------------Desktop view---------------*/
@@ -148,10 +145,10 @@
     .backimage {
         padding: 5rem;
     }
+    .hospital {
+        height: 12.5rem;
+    }
     .hospital_box {
         grid-template-columns: 72% 26%;
-    }
-    .left_head p {
-        font-size: 1.4rem;
     }
 }

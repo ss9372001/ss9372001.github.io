@@ -13,15 +13,14 @@
 }
 /* --------------FAQ info--------------- */
 .faq_box {
-    border: 1px solid var(--bordergray-color);
+    border: 0.063rem solid var(--bordergray-color);
     padding: 0.6rem;
 }
 /* ----------------FAQ list---------------- */
-.left_head p {
+.left_head h6 {
     margin-bottom: 0;
     font-family: var(--ff-bold);
     color: var(--vibblue-color);
-    font-size: 1.2rem;
 }
 .left_head {
     display: flex;
@@ -35,15 +34,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px dashed var(--bordergray-color);
-    padding: 10px 0;
+    border-top: 0.063rem dashed var(--bordergray-color);
+    padding: 0.625rem 0;
 }
 .last {
-    border-bottom: 1px dashed var(--bordergray-color);
+    border-bottom: 0.063rem dashed var(--bordergray-color);
 }
 .list_info {
-    border-top: 1px dashed var(--bordergray-color);
-    padding: 10px;
+    border-top: 0.063rem dashed var(--bordergray-color);
+    padding: 0.625rem;
     background-color: rgb(229,241,247);
 }
 .list_info p {
@@ -65,21 +64,15 @@
 /*-----------------Tablet View---------------------*/
 @media only screen and (min-device-width:768px) {
     .list_heading {
-        padding: 20px 0;
+        padding: 1.25rem 0;
     }
     .list_info {
-        padding: 20px;
-    }
-    .left_head p {
-        font-size: 1.3rem;
+        padding: 1.25rem;
     }
 }
 /*-------------------Desktop view---------------*/
 @media only screen and (min-device-width:1024px) {
     .backimage {
         padding: 5rem;
-    }
-    .left_head p {
-        font-size: 1.4rem;
     }
 }

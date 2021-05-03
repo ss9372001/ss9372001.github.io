@@ -12,10 +12,10 @@
 }
 /* --------------Doctor info--------------- */
 .doctor_box {
-    border: 1px solid var(--bordergray-color);
+    border: 0.063rem solid var(--bordergray-color);
     padding: 0.6rem;
 }
-.info_doc h5 {
+.info_doc h4 {
     color: var(--vibblue-color);
     margin-bottom: 0;
     font-family: var(--ff-bold);
@@ -23,34 +23,29 @@
 .h3_line {
     background-color: var(--vibblue-color);
     width: 3rem;
-    height: 3px;
+    height: 0.15rem;
+    margin-right: 0.3rem;
 }
 .info_doc__title {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     transform: translateX(-0.6rem);
 }
 /* -------------Book an appointment button------------ */
-.book_an_appointment {
+.appointment_button {
     display: flex;
     justify-content: center;
     margin: auto;
     margin-top: 0.7rem;
-    background-color: var(--darkblue-color);
-    color: var(--white-color);
-    padding: 0.7rem 2rem;
-    border: none;
     width: 100%;
 } 
 /* ----------------Profile list---------------- */
-.left_head p {
+.left_head h6 {
     margin-bottom: 0;
-    font-family: var(--ff-bold);
     color: var(--vibblue-color);
-    font-size: 1.2rem;
     margin-left: 1rem;
 }
 .left_head {
@@ -65,15 +60,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px dashed var(--bordergray-color);
-    padding: 10px 0;
+    border-top: 0.063rem dashed var(--bordergray-color);
+    padding: 0.625rem 0;
 }
 .last {
-    border-bottom: 1px dashed var(--bordergray-color);
+    border-bottom: 0.063rem dashed var(--bordergray-color);
 }
 .list_info {
-    border-top: 1px dashed var(--bordergray-color);
-    padding: 10px;
+    border-top: 0.063rem dashed var(--bordergray-color);
+    padding: 0.625rem;
     background-color: rgb(229,241,247);
 }
 .list_info p {
@@ -115,11 +110,8 @@
     .list_info {
         padding: 20px;
     }
-    .left_head p {
-        font-size: 1.3rem;
-    }
     .h3_line {
-        width: 2rem;
+        width: 1.6rem;
     }
 }
 
@@ -130,8 +122,5 @@
     }
     .doctor_box {
         grid-template-columns: 72% 26%;
-    }
-    .left_head p {
-        font-size: 1.4rem;
     }
 }

@@ -2,7 +2,6 @@
 /* ---------------Healthy section image--------------- */
 .healthyimg {
     background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
-    /* height: 50vh; */
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(59, 59, 59, 0.5);
     background-position: center;
@@ -14,9 +13,9 @@
 /* -----------------about us------------------ */
 .signature {
     width: 60vw;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
-.texxt h33 {
+.texxt h3 {
     font-family: var(--ff-bold);
     text-align: center;
     margin-bottom: 1rem;
@@ -43,36 +42,18 @@ video {
     color: var(--footer-color);
 }
 .freecheckup button {
-    margin: 20px auto;
+    margin: 1.25rem auto;
     display: flex;
 }
 .follow {
-    border: 1px solid var(--footer-color);
-    padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    border: 0.063rem solid var(--footer-color);
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1.25rem;
 }
 .follow_last {
     margin: 0;
 }
-/* -------------Join our team---------------- */
-.join_our_team {
-    background-color: var(--lightblue-color);
-}
-.jointeam_headings h2 {
-    color: var(--white-color);
-    font-family: var(--ff-bold);
-    text-align: center;
-    margin-bottom: 0.8rem;
-}
-.join_our_team .jointeam_headings p {
-    color: var(--darkblue-color);
-}
-.jointeam_button {
-    display: flex;
-    justify-content: center;
-}
-
 /* ------------Tablet view----------- */
 @media only screen and (min-device-width:768px) {
     .healthyimg {
@@ -100,7 +81,7 @@ video {
         text-align: left;
     }
     .freecheckup button {
-        margin: 20px 0;
+        margin: 2.5rem 0;
     }
     .follow {
         margin-bottom: 0;
@@ -146,11 +127,11 @@ video {
     #myvideo {
         position: absolute;
         object-fit: cover;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     video {
         width: 100%;
-        height: 520px;
+        height: 33.5rem;
         display: block;
     }
     .freecheckup {
@@ -164,27 +145,12 @@ video {
         grid-template-columns: 1fr 1fr;
     }
     .freecheckup p {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .freecheckup button{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
     .follow {
         padding: 50px 0;
-    }
-    /* -------------join our team--------------- */
-    .join_our_team {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .jointeam_headings h2 {
-        text-align: left;
-    }
-    .jointeam_button {
-        font-size: 1rem;
-        padding: 1rem 3.2rem;
-        border-radius: 2px;
     }
 }

@@ -12,19 +12,19 @@
     width: fit-content;
     height: fit-content;
     font-size: 0.8rem;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.313rem;
     margin: 0 auto 1rem auto;
 }
 /* ---------------------Gradient section-------------------- */
 .gradient {
     background-image: linear-gradient(to bottom, var(--lightblue-color), var(--white-color));
-    height: 1400px;
+    height: 82.4rem;
 }
 .tvastra_plans {
     background-color: var(--white-color);
-    border-radius: 6px;
-    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.3);
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.313rem 0.125rem rgba(0,0,0,0.3);
     padding: 0.5rem;
     position: absolute;
     top: 44%;
@@ -33,15 +33,15 @@
     margin: 0 auto;
 }
 .plans_heading {
-    padding: 1rem 0rem;
-    border-bottom: 1px solid var(--inactivetext-color);
+    padding: 1rem 0.3rem;
+    border-bottom: 0.063rem solid var(--inactivetext-color);
 }
-.plans_heading h2 {
+.plans_heading h3 {
     text-align: center;
 }
 .plan_head {
-    padding: 0.8rem;
-    border-bottom: 1px solid var(--inactivetext-color);
+    padding: 0.6rem;
+    border-bottom: 0.063rem solid var(--inactivetext-color);
 }
 .plan_head h4 {
     text-align: center;
@@ -52,7 +52,7 @@
     font-size: 1rem;
 }
  .plan {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,7 +61,7 @@
 .plan button, .advanced_plan button {
     margin: 1rem auto;
     display: flex;
-    padding: 10px 12px;
+    padding: 0.625rem 0.75rem;
 }
 .plan_list {
     margin: 1rem 1.5rem 0 1.5rem;
@@ -71,7 +71,7 @@
     font-family: var(--ff-bold);
 }
 .foot {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .advanced_plan {
@@ -79,14 +79,14 @@
     position: relative;
 }
 .advanced_plan .plan_head {
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 0.063rem solid var(--gray-color);
 }
 .popular {
     width: fit-content;
-    background-color: #008000;
+    background-color: var(--popular_but-color);
     color: var(--white-color);
-    border-radius: 12px;
-    padding: 8px 14px;
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.875rem;
     font-size: 0.8rem;
     margin: 0 auto;
     position: absolute;
@@ -111,7 +111,7 @@
     margin-top: 0.6rem;
 }
 .stars {
-    width: 80px;
+    width: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -122,13 +122,13 @@
 }
 .bar {
     background-color: var(--bordergray-color);
-    height: 14px;
+    height: 0.875rem;
     width: 90%;
-    border-radius: 14px;
+    border-radius: 0.875rem;
 }
-.bar_5, .bar_4, .bar_3, .bar_2,.bar_1 {
-    height: 14px;
-    border-radius: 14px;
+.bar_5, .bar_4, .bar_3, .bar_2, .bar_1 {
+    height: 0.875rem;
+    border-radius: 0.875rem;
     background-color: var(--vibblue-color);
 }
 .bar_5 {
@@ -146,20 +146,19 @@
 .bar_contain {
     display: flex;
     flex-direction: row;
-    width: 70vw;
+    width: 60vw;
     justify-content: space-between;
     align-content: center;
     margin: 0 auto;
-    height: 30px;
+    height: 1.875rem;
 }
 
 /* ------------Blocks--------------- */
 .blocks {
     margin-top: 1rem;
-    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 1rem;
 }
 .block h3 i, .block h6, .block p, .block h3 {
     color: var(--vibblue-color);
@@ -167,15 +166,15 @@
     text-align: center;
 }
 /* -----------------Benefits------------------- */
-.benefit_heading p {
-    margin-top: 3rem;
+.benefit_heading .membership {
+    font-weight: bold;
     margin-bottom: 0.8rem;
 }
 .border_line {
     background-color: var(--lightblue-color);
     width: 90%;
-    height: 5px;
-    border-radius: 14px;
+    height: 0.313rem;
+    border-radius: 0.875rem;
     margin: 0 auto;
 }
 .benefit {
@@ -201,26 +200,29 @@
     justify-self: center;
     align-items: center;
 }
+.benefit4 {
+    margin-bottom: 0;
+}
 .benefit_imgg h5 {
     text-align: center;
 }
 .imgs {
     width: 100%;
-    height: 90px;
-    padding: 10px;
+    height: 5.625rem;
+    padding: 0.625rem;
 }
 .imgs img {
     object-fit: contain;
 }
 .sakra, .artemis {
-    border-right: 1px solid var(--lightblue-color);
-    border-bottom: 1px solid var(--lightblue-color);
+    border-right: 0.063rem solid var(--lightblue-color);
+    border-bottom: 0.063rem solid var(--lightblue-color);
 }
 .birla {
-    border-right: 1px solid var(--lightblue-color);
+    border-right: 0.063rem solid var(--lightblue-color);
 }
 .psri, .people_tree {
-    border-bottom: 1px solid var(--lightblue-color);
+    border-bottom: 0.063rem solid var(--lightblue-color);
 }
 .benefit_imgg .more_hospitals {
     margin-top: 1rem;
@@ -228,7 +230,7 @@
 }
 .benefit__img {
     border-radius: 8px;
-    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0.125rem 0.313rem 0.125rem rgba(0,0,0,0.3);
 }
 .benefit_heading .tests_included {
     margin-top: 2rem;
@@ -239,18 +241,17 @@
     text-align: center;
 } 
 .profile {
-    border-radius: 6px;
-    box-shadow: 0 2px 5px 2px rgba(63, 63, 63, 0.3);
-    padding: 15px 0;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.313rem 0.125rem rgba(63, 63, 63, 0.3);
+    padding: 0.938rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* width: 150px; */
-    margin: 5px;
+    margin: 0.313rem;
 }
 .profile_img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     margin: 1rem auto; 
 }
 .deficiency_profiles .slide, .deficiency_profiles .slide_hidden {
@@ -263,14 +264,14 @@
 /* ----------------Carousel-------------- */
 .carouses {
     background-color: var(--bordergray-color);
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 100%;
 }
 .carou {
     display: flex;
     flex-direction: row;
-    width: 30px;
+    width: 1.875rem;
     justify-content: space-between;
     margin: 1rem auto 0 auto;
     cursor: pointer;
@@ -280,8 +281,8 @@
 }
 /* ----------------Used Plans--------------- */
 .user {
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 2px rgba(63, 63, 63, 0.3);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.313rem 0.125rem rgba(63, 63, 63, 0.3);
     padding: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -290,10 +291,10 @@
     font-family: var(--ff-bold);
 }
 .user_detail img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 100%;
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
 }
 .used_plan {
     background-color: rgb(204,227,240);
@@ -302,23 +303,21 @@
     font-size: 0.8rem;
     width: fit-content;
     padding: 0.6rem 1rem;
-    border-radius: 6px;
+    border-radius: 0.375rem;
 }
 .user_detail {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    column-gap: 10px;
+    column-gap: 0.625rem;
 }
 .tvastra_head {
     display: flex;
-    /* justify-content: space-between; */
     align-content: center;
     margin-bottom: 1rem;
 }
 .tvastra_head h3 {
     margin-bottom: 0;
     margin-right: 1rem;
-    /* text-align: left; */
 }
 .tvastra_head .plus {
     margin: 0;
@@ -327,11 +326,10 @@
     margin-bottom: 0;
 }
 /* -------------------faq----------------------- */
-.left_head p {
+.left_head h6 {
     margin-bottom: 0;
     font-family: var(--ff-bold);
     color: var(--vibblue-color);
-    font-size: 1.1rem;
 }
 .left_head {
     display: flex;
@@ -345,11 +343,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 .list_info {
-    border-top: 1px dashed var(--bordergray-color);
-    padding: 10px;
+    border-top: 0.063rem dashed var(--bordergray-color);
+    padding: 0.625rem;
     background-color: rgb(229,241,247);
 }
 .list_info p, .left_head p {
@@ -402,12 +400,12 @@
         left: 35%;
     }
     .tvastra_plans {
-        top: 25%;
+        top: 28%;
         left: 1.8rem;
         right: 1.8rem;
     }
     .gradient {
-        height: 500px;
+        height: 33.5rem;
     }
     /* -----------------Reviews----------------- */
     .reviews {
@@ -421,7 +419,7 @@
     .bar_contain {
         width: 80%;
     }
-    .bars h5, .bars p {
+    .bars_head {
         margin-bottom: 2rem;
     }
     .blocks {
@@ -429,14 +427,14 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .block {
-        height: 130px;
+        height: 8.125rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .benefit_heading .membership {
-        margin: 2rem;
         font-size: 1.3rem;
+        text-align: center;
     }
     .border_line {
         width: 50%;
@@ -449,12 +447,12 @@
     .benefit1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
     .benefit2, .benefit4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
     .benefit2 .benefit__img, .benefit4 .benefit__img {
         grid-area: 1/1/span 1/ span 1;
@@ -462,7 +460,7 @@
     .benefit3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
     .benefit {
         margin-top: 2rem;
@@ -478,11 +476,8 @@
         column-gap: 1rem;
     }
     /* ------------faqs--------- */
-    .faqq h2 {
+    .faqq h4 {
         text-align: left;
-    }
-    .left_head p {
-        font-size: 1.2rem;
     }
 }
 
@@ -509,7 +504,7 @@
         padding: 0.5rem 4rem;
     }
     .gradient {
-        height: 650px;
+        height: 38rem;
     }
     /* ---------------Reviews--------------- */
     .bars p {
@@ -534,22 +529,51 @@
     }
     .border_line {
         width: 30%;
+        margin-bottom: 3rem;
+    }
+    .more_hospitals {
+        text-align: center;
     }
     .benefit1,.benefit3{
-        grid-template-columns: 50% 40%;
-        column-gap: 125px;
+        display: flex;
+        justify-content: space-between;
     }
-    .benefit2,.benefit4{
-        grid-template-columns: 40% 53%;
-        column-gap: 75px;
+    .benefit1 .benefit_head, .benefit3 .benefit_head {
+        width: 700px;
     }
-    .benefit {
-        margin-bottom: 5rem;
-    }
-    .benefit__img {
+    .benefit1 .benefit_imgg {
         width: 400px;
     }
+
+    .benefit2,.benefit4{
+        grid-template-columns: 40% 53%;
+        column-gap: 4.688rem;
+    }
+    .benefit {
+        margin-bottom: 3rem;
+    }
+    .benefit4 {
+        margin-bottom: 0;
+    }
+    .benefit__img {
+        width: 30rem;
+        height: 20rem;
+    }
     /* ------------------Deficiency------------------ */
+    .tests_included {
+        font-family: var(--ff-bold);
+        margin-bottom: 2rem;
+    }
+    .profile {
+        padding: 1.5rem;
+        height: 14rem;
+    }
+    .profile h6 {
+        text-align: left;
+    }
+    .profile_img {
+        margin: 1rem 0;
+    }
     .deficiency_profiles .slide_visible {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -558,6 +582,9 @@
 
     .tvastra_head .plus {
         margin: 0rem 0 0 0.6rem;
+    }
+    .tvastra_head {
+        margin-bottom: 1.5rem;
     }
     .users {
         display: grid;
@@ -572,8 +599,5 @@
     /* ----------------faq---------------- */
     .faqq h5 {
         font-size: 1.8rem;
-    }
-    .left_head p {
-        font-size: 1.3rem;
     }
 }

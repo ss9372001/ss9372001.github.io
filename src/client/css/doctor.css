@@ -10,8 +10,8 @@
     /* ------------------heading for doctor section---------------- */
     select {
         background: var(--bordergray-color);
-        padding: 8px 10px;
-        width: 100px;
+        padding: 0.4rem 0.625rem;
+        width: 6.25rem;
         border: none;
     }
     .doctor-section_heading {
@@ -23,6 +23,7 @@
     .doctor-section_heading p {
         margin: 0;
         font-size: 1.2rem;
+        font-weight: bold;
     }
     /* --------------------Hiding filter section for mobile view---------------------- */
     .doctors_filters {
@@ -30,7 +31,7 @@
     }
     /* -----------Top margin for doctor section------------ */
     .doctors_filters_grid {
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
 /* -------------------------filter section stylings-------------------------------- */
 
@@ -43,10 +44,10 @@
         flex-wrap: wrap;
     }
     .selected_filters div {
-        border: 1px solid var(--bordergray-color);
-        border-radius: 12px;
+        border: 0.063rem solid var(--bordergray-color);
+        border-radius: 0.75rem;
         font-size: 0.9rem;
-        padding: 6px;
+        padding: 0.375rem;
         width: max-content;
         margin-right: 0.2rem;
         margin-bottom: 0.2rem;
@@ -74,9 +75,9 @@
     /* --------------Box sizes-------------- */
     .doctors {
         width: 100%;
-        border: 1px solid var(--bordergray-color);
-        padding-top: 20px;
-        margin-bottom: 20px;
+        border: 0.063rem solid var(--bordergray-color);
+        padding-top: 1.25rem;
+        margin-bottom: 1.25rem;
     }
     /* -----------------Title of the boxes-------------------------- */
     .title {
@@ -91,41 +92,36 @@
     }
     .blue__line {
         width: 2rem;
-        height: 2px;
+        height: 0.125rem;
         background-color: var(--doctors-color);
     }
     /* ----------------List items---------------- */
     .list {
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 0.625rem;
+        margin-top: 0.625rem;
         margin-bottom: 1rem;
     }
     .img_iml1 {
-        height: 365px;
+        height: 22.813rem;
     }
     .list li {
         display: flex;
-        margin-bottom: 5px;
+        margin-bottom: 0.313rem;
         justify-content: flex-start;
         align-items: center;
     }
     .list .fa {
         color: var(--doctors-color);
         font-size: 1rem;
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
 /* -------------Book an appointment button------------ */
-.book_an_appointment {
+.appointment_button {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 0.7rem;
     margin-bottom: 1rem;
-    background-color: var(--darkblue-color);
-    color: var(--white-color);
-    padding: 0.7rem 2rem;
-    border: none;
 }
 
 /* --------------Tablet view-------------- */
@@ -163,7 +159,7 @@
         .doctors_filters_grid {
             display: grid;
             grid-template-columns: 23% 75%;
-            column-gap: 20px;
+            column-gap: 1.25rem;
         }
 
 
@@ -173,7 +169,7 @@
         background-color: var(--inactivetext-color);
         color: var(--darkblue-color);
         text-align: left;
-        padding: 12px;
+        padding: 0.75rem;
         font-family: 'nexa-bold';
     }
     .search-location-minus {
@@ -188,8 +184,8 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 1rem;
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
     .headinng {
         font-size: 1.1rem;
@@ -198,7 +194,7 @@
     .doctors {
         display: grid;
         grid-template-columns: 66% 33%;
-        column-gap: 5px;
+        column-gap: 0.313rem;
         padding-top: 0;
         position: relative;
     }
@@ -215,25 +211,25 @@
     .doctors .left_info .list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
     .img_iml1 {
-        height: 280px;
+        height: 17.5rem;
     }
-    .book_an_appointment {
+    .appointment_button {
         bottom: 1rem;
         left: 2.4rem;
         position: absolute;
         font-size: 1rem;
     }
-    .book_an_appointment {
+    .appointment_button {
         display: flex;
         justify-content: flex-start;
         margin-bottom: 0;
     }
     .checkbox {
-        margin-top: 20px;
-        margin-left: 12px;
+        margin-top: 1.25rem;
+        margin-left: 0.75rem;
     }
     .checkbox li {
         display: flex;
@@ -252,7 +248,7 @@
     .hor_line {
         width: 100%;
         background-color: var(--gray-color);
-        height: 1px;
+        height: 0.063rem;
     }
 }
 
@@ -266,7 +262,7 @@
         .doctors .title {
             margin-top: 2.5rem;
         }
-        .book_an_appointment {
+        .appointment_button {
             bottom: 2.5rem;
         }
         .img_iml1 {

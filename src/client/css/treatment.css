@@ -5,8 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .backg_img h1, .backg_img p {
     color: var(--white-color);
@@ -15,7 +15,7 @@
 .dentistry {
     display: grid;
     grid-template-rows: auto auto auto;
-    row-gap: 20px;
+    row-gap: 1rem;
 }
 /* -------------Vaccination section------------- */
     .vaccination {
@@ -24,16 +24,16 @@
     }
     /* -----------Dentistry department----------- */
     .circle {
-        width: 5px;
-        height: 5px;
+        width: 0.313rem;
+        height: 0.313rem;
         border-radius: 100%;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         background-color: var(--vibblue-color);
     }
     .den_dep li {
         display: flex;
         align-items: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
     }
     .dentistry_department h6 {
         text-align: left;
@@ -45,12 +45,12 @@
 .type i {
     color: var(--darkblue-color);
     font-size: 2rem;
-    width: 80px;
-    padding: 25px;
-    height: 80px;
+    width: 5rem;
+    padding: 1.563rem;
+    height: 5rem;
     border-radius: 100%;
     background-color: var(--treatment-color);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .type {
     display: flex;
@@ -65,45 +65,32 @@
 .service_details {
     display: grid;
     grid-template-rows: auto auto;
-    row-gap: 10px;
+    row-gap: 0.625rem;
 }
 .service, .schedule {
-    border: 1.5px solid var(--bordergray-color);
+    border: 0.094rem solid var(--bordergray-color);
     width: 100%;
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
 }
-.service h6 {
+.service h6, .schedule h6 {
     position: relative;
     text-align: left;
 }
-.service h6:before {
+.service h6:before, .schedule h6:before {
     content: "";
-    width: 1.1rem;
+    width: 1.3rem;
     height: 0.15rem;
     background: var(--darklightblue-color);
     position: absolute;
     top: 0.6rem;
-    left: -1.2rem;
-}
-.schedule h6 {
-    position: relative;
-    text-align: left;
-}
-.schedule h6:before {
-    content: "";
-    width: 1.1rem;
-    height: 0.15rem;
-    background: var(--darklightblue-color);
-    position: absolute;
-    top: 0.6rem;
-    left: -1.2rem;
+    left: -1.5rem;
 }
 .service .ser_detail, .schedule .sch_detail{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid var(--bordergray-color);
+    border-bottom: 0.063rem solid var(--bordergray-color);
 }
 .ser_detail .span, .sch_detail .span {
     color: var(--footer-color);
@@ -121,15 +108,18 @@
     color: var(--white-color);
 }
 .leftarrow, .rightarrow {
-    width: 35px;
-    height: 35px;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 100%;
-    padding: 10px 8px 10px 12px;
+    padding: 0.625rem 0.5rem 0.625rem 0.75rem;
     background-color: var(--white-color);
     cursor: pointer;
 }
 .leftarrow {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+}
+.rightarrow {
+    margin-left: 0.5rem;
 }
 .leftarrow i, .rightarrow i {
     color: var(--darkblue-color);
@@ -141,17 +131,17 @@
     align-items: center;
 }
 .service_type {
-    border-radius: 15px;
-    box-shadow: 5px 2px 5px 2px rgba(0,0,0,0.3);
+    border-radius: 0.938rem;
+    box-shadow: 0.313rem 0.125rem 0.313rem 0.125rem rgba(0,0,0,0.3);
 }
 .service_type img {
-    border-radius: 15px 15px 0 0;
+    border-radius: 0.938rem 0.938rem 0 0;
 }
 .service_foot {
     background-color: var(--white-color);
-    padding: 20px 0px 20px 20px;
-    margin-top: -3px;
-    border-radius: 0 0 15px 15px;
+    padding: 1.25rem 0px 1.25rem 1.25rem;
+    margin-top: -0.188rem;
+    border-radius: 0 0 0.938rem 0.938rem;
 }
 .service_foot h6 {
     margin-bottom: 0;
@@ -171,37 +161,58 @@
     display: none;
 }
 .more_services_types .slidee--visible {
-    margin-top: 30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1rem;
     display: grid;
     grid-template-rows: auto auto auto;
-    row-gap: 15px;
+    row-gap: 0.938rem;
 }
 /* ---------------Tablet view------------------- */
 @media only screen and (min-device-width:768px) {
+    .backg_img {
+        background-position: top;
+    }
     .img_info {
         display: grid;
         grid-template-columns: 35% 60%;
-        column-gap: 30px;
+        column-gap: 1.875rem;
     }
     .vaccination h3 {
         text-align: left;
     }
     .types {
         display: grid;
-        grid-template-columns: 35% 30% 30%;
-        column-gap: 20px;
+        grid-template-columns: 34% 30% 30%;
+        column-gap: 1.25rem;
     }
     .type p {
         text-align: center;
     }
+    .service_type img {
+        border-radius: 0.6rem 0.6rem 0 0;
+        height: 11.25rem;
+    }
+    .service_foot {
+        border-radius: 0 0 0.6rem 0.6rem;
+        padding: 1.6rem 0 1.6rem 1rem;
+    } 
     .service_details {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
+        column-gap: 1.25rem;
         row-gap: 0;
     }
     .schedule, .service {
         height: fit-content;
+    }
+    .service_foot h6:before {
+        content: "";
+        width: 0.8rem;
+        height: 0.15rem;
+        background: var(--darklightblue-color);
+        position: absolute;
+        top: 0.6rem;
+        left: -0.9rem;
     }
     /* -------------------More services------------------- */
     .services_heading {
@@ -213,17 +224,23 @@
     .more_services_types .slidee--visible {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
+        column-gap: 0.5rem;
+        margin-bottom: 0;
+        row-gap: 0;
     }
     
 }
 @media only screen and (min-device-width:1024px) {
+    .backg_img {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
     /* ---------Treatment section---------- */
     .dentistry {
         display: grid;
         grid-template-columns: 67% 30.5%;
         grid-template-rows: auto auto;
-        column-gap: 30px;
+        column-gap: 1.875rem;
         width: 100%;
     }
     .backg_img h3  {
@@ -231,13 +248,28 @@
     }
     .service_details {
         grid-area: 1 /2 /span 2/ span 1;
-        
+    }
+    .service_type img {
+        height: auto;
+    }
+    .service_foot h6:before {
+        content: "";
+        width: 1.7rem;
+        height: 0.15rem;
+        background: var(--darklightblue-color);
+        position: absolute;
+        top: 0.6rem;
+        left: -1.9rem;
+    }
+    .service_foot {
+        padding: 2rem 0 2rem 2rem;
+        margin-top: -0.313rem;
     }
     .types {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .service_type {
-        width: 443px;
+        width: 27.688rem;
     }
     .service_details {
         display: flex;

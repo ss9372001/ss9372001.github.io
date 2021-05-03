@@ -2,35 +2,36 @@
 /*-------------Sign up section----------------*/
 .signupform {
     background-color: var(--lightblue-color);
+    padding: 2rem 1rem;
 }
 .signup {
     padding: 1rem;
     background-color: var(--white-color);
 }
 .shadow {
-    box-shadow: 5px 2px 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 0.313rem 0.125rem 0.313rem 0.125rem rgba(0,0,0,0.3);
 }
 .signup_heading {
     background-color: var(--white-color);
     padding: 1.5rem;
-    border-bottom: 1px solid var(--bordergray-color);
+    border-bottom: 0.063rem solid var(--bordergray-color);
 }
 .signup_heading h5 {
     margin-bottom: 0;
-    color: var(--doctors-color);
+    color: var(--darklightblue-color);
 }
 .input1, .input2, .input3, .input5, .input4,.input6, .input9 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4px;
-    border: 1px solid var(--gray-color);
-    margin: 16px auto;
+    padding: 0.25rem;
+    border: 0.063rem solid var(--gray-color);
+    margin: 1rem auto;
 }
 .input4 select , .input9 select{
     width: 100%;
-    padding: 0 4px;
+    padding: 0 0.25rem;
     color: var(--footer-color);
     background-color: var(--white-color);
 }
@@ -48,7 +49,7 @@
 .input7and8 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 0.625rem;
     justify-content: center;
 }
 .signupbutton {
@@ -58,15 +59,14 @@
     justify-content: center;
     align-content: center;
     width: 100%;
-    padding: 5px;
+    padding: 0.313rem;
     background-color: var(--darkblue-color);
     margin-left: auto;
     margin-right: auto;
 }
 .signup_button {
-    background-color: var(--darkblue-color);
-    color: var(--white-color);
     font-size: 0.9rem;
+    letter-spacing: 0.15rem;
 }
 .fa-arrow-right {
     color: var(--white-color);
@@ -85,7 +85,7 @@
 }
 .signup_footer a {
     font-size: 0.7rem;
-    color: var(--doctors-color);
+    color: var(--darklightblue-color);
     font-weight: bolder;
 }
 .foo--ter {
@@ -103,7 +103,6 @@
 /* -------------------Tablet view------------------ */
 @media only screen and (min-device-width:768px) {
     .signupform {
-        margin-bottom: -1px;
         padding: 8rem;
     }
 }
