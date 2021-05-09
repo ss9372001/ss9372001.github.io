@@ -6,25 +6,41 @@ nexmoConfig.privateKey = path.join(__dirname, "private.key");
 
 const nexmo = new Nexmo(nexmoConfig);
 
-
 function send(otp, recipientAdresses) {
-  console.log(recipientAdresses.phone);
   const message = `Insert the following code: ${otp.code}`;
-  nexmo.channel.send(
-    { "type": "sms", "number": '91'+recipientAdresses.phone },
-    { "type": "sms", "number": "NEXMO" },
+
+  nexmo.dispatch.create("failover", [
     {
-      "content": {
-        "type": "text",
-        "text": message
+      "from": { "type": "messenger", "id": "101196525485556" },
+      "to": { "type": "messenger", "id": recipientAdresses.messengerId },
+      "message": {
+        "content": {
+          "type": "text",
+          "text": message
+        }
+      },
+      "failover":{
+        "expiry_time": 120,
+        "condition_status": "read"
+      }
+    },
+    {
+      "from": {"type": "sms", "number": "NEXMO"},
+      "to": { "type": "sms", "number": recipientAdresses.phoneNumber},
+      "message": {
+        "content": {
+          "type": "text",
+          "text": message
+        }
       }
     },
     (err, data) => { 
-      if(err){
-        console.log(err);
-      }
-      console.log(data.message_uuid); }
-  );
+        if(err){
+          console.log(err);
+        }
+        console.log(data.message_uuid); }
+  
+  ]) 
 }
 
 module.exports = {
