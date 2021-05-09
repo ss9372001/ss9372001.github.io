@@ -1,19 +1,19 @@
-/* @font-face{
+@font-face{
     font-family: 'nexa-bold';
     src:url(/fonts/Nexa-Bold.otf) format('truetype');
 }
 @font-face{
     font-family: 'nexa-light';
     src:url(/fonts/Nexa-Light.otf) format('opentype');
-} */
-@font-face {
+}
+/* @font-face {
     font-family: 'nexa-bold';
     src: url(../assets/fonts/Nexa-Bold.otf) format('opentype');
 }
 @font-face {
     font-family: 'nexa-light';
     src: url(../assets/fonts/Nexa-Light.otf) format('opentype');
-}
+} */
   :root {
       --darkblue-color: #021433 ;
       --icon-color: #525659;
@@ -302,7 +302,7 @@ select option {
         font-size: var(--fs-p);
     }
     button {
-        padding: 0.9rem 1.8rem;
+        padding: 0.85rem 1.8rem;
     }
 }
 

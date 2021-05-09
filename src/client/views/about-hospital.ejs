@@ -4,62 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor's Profile</title>
-    <!-- <%- include('partials/head.ejs') %> -->
-    <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/commonForAllPages.css">
-        <link rel="stylesheet" href="../css/theme.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/doctor-profile.css">
+    <title>Apollo Hospital</title>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="about-hospital.css">
 </head>
 <body>
     <!-----------Header------------------->
-    <!-- <%- include('partials/header.ejs') %> -->
-    <!-----------Header------------------->
-<header>
-    <nav class="nav_bar">
-        
-        <a href="../views/index.html">
-            <div class="header__logo"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="TVASTRA"></div>
-        </a>
-        
-        <a href="#" class="menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        
-        <div class="header_links">
-            <a href="../views/doctor.html">Doctors</a>
-            <a href="../views/hospitals.html">Hospitals</a>
-            <a href="../views/treatment.html">Treatments</a>
-            <a href="../views/tvastra-plus.html">Other Services</a>
-            <a href="../views/about-us.html">About</a>
-        </div>
-        
-        <div class="navbar_buttons">
-            <button class="transparent_button border_button" type="button">Login / Sign Up</button>
-            <button class="darkblue_button border_button" type="button">Get a Quote</button>
-        </div>
-        
-    </nav>
-</header>
+
+    <%- include('partials/header.ejs') %>
+
     <!-- ------------Doctor heading------------ -->
     <section class="backimage">
         <div>
-            <h1>About Apollo Hospital</h1>
-            <p>Home / Hospital Profile</p>
+            <h1>About John Nissan</h1>
+            <p>Home / Doctor Profile</p>
         </div>
     </section>
-    <!-- ---------------Doctor info---------------- -->
-    <section class="doctor_info">
-        <div class="doctor_box">
+    <!-- ---------------Hospital info---------------- -->
+    <section class="hospital_info">
+        <div class="hospital_box">
             <div class="img_button">
-                <div class="doc">
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg">
+                <div class="hospital">
+                    <img src="../assets/apollohospital.jpg">
                 </div>
-                <button class="darkblue_button appointment_button" type="button">Book an appointment</button>
+                <button class="darkblue_button call_now" type="button">Call Now</button>
             </div>
-            <div class="info_doc">
-                    <div class="info_doc__title">
+            <div class="info_hospital">
+                    <div class="info_hospital__title">
                         <div class="h3_line"></div>
-                        <div><h4>John Nissan</h4></div>
+                        <div><h4>Apollo Hospital</h4></div>
+                    </div>
+                    <div class="hosptal_specification_list">
+                        <ul>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Delhi Mathura Road, Sarita Vihar, Delhi 110076
+                            </li>
+                            <li>
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                113 Beds
+                            </li>
+                        </ul>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, non illum optio voluptas tenetur laboriosam quas architecto repellat veritatis error asperiores pariatur. Nemo, velit neque. Iure possimus officia harum saepe?</p>                
                 <div class="profile_list">
@@ -77,7 +62,7 @@
                     <div class="list_heading">
                         <div class="left_head">
                             <i class="fa fa-stethoscope" aria-hidden="true"></i>
-                            <h6>List of Treatments</h6>
+                            <h6>Famous Treatments</h6>
                         </div>
                         <i class="fa fa-chevron-circle-down" id="down2" aria-hidden="true" onclick="show('list_info2','down2','up2')"></i>
                         <i class="fa fa-chevron-circle-up" id="up2" aria-hidden="true" onclick="hide('list_info2','down2','up2')"></i>
@@ -87,8 +72,8 @@
                     </div>
                     <div class="list_heading">
                         <div class="left_head">
-                            <i class="fa fa-hospital-o" aria-hidden="true"></i>
-                            <h6>Work Experience</h6>
+                            <i class="fa fa-user-md" aria-hidden="true"></i>
+                            <h6>Famous Doctors</h6>
                         </div>
                         <i class="fa fa-chevron-circle-down" id="down3"aria-hidden="true" onclick="show('list_info3','down3','up3')"></i>
                         <i class="fa fa-chevron-circle-up" id="up3"aria-hidden="true" onclick="hide('list_info3','down3','up3')"></i>
@@ -98,8 +83,8 @@
                     </div>
                     <div class="list_heading">
                         <div class="left_head">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <h6>Qualification</h6>
+                            <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                            <h6>Infrastructure</h6>
                         </div>
                         <i class="fa fa-chevron-circle-down" id="down4"aria-hidden="true" onclick="show('list_info4','down4','up4')"></i>
                         <i class="fa fa-chevron-circle-up" id="up4"aria-hidden="true" onclick="hide('list_info4','down4','up4')"></i>
@@ -109,8 +94,8 @@
                     </div>
                     <div class="list_heading">
                         <div class="left_head">
-                            <i class="fa fa-trophy" aria-hidden="true"></i>
-                            <h6>Awards</h6>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h6>Complete Address</h6>
                         </div>
                         <i class="fa fa-chevron-circle-down" id="down5" aria-hidden="true" onclick="show('list_info5','down5','up5')"></i>
                         <i class="fa fa-chevron-circle-up" id="up5" aria-hidden="true" onclick="hide('list_info5','down5','up5')"></i>
@@ -120,8 +105,8 @@
                     </div>
                     <div class="list_heading">
                         <div class="left_head">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <h6>Location</h6>
+                            <i class="fa fa-h-square" aria-hidden="true"></i>
+                            <h6>Hospital Packages</h6>
                         </div>
                         <i class="fa fa-chevron-circle-down" id="down6" aria-hidden="true" onclick="show('list_info6','down6','up6')"></i>
                         <i class="fa fa-chevron-circle-up" id="up6" aria-hidden="true" onclick="hide('list_info6','down6','up6')"></i>
@@ -129,10 +114,10 @@
                     <div class="list_info inactive" id="list_info6">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor iste ad, veritatis, sed, ex ea provident nesciunt nulla sapiente repellat. Dignissimos quibusdam ullam eaque illum molestias reprehenderit sed necessitatibus.</p>                    
                     </div>
-                    <div class="list_heading last">
+                    <div class="list_heading">
                         <div class="left_head">
                             <i class="fa fa-inr" aria-hidden="true"></i>
-                            <h6>Avg Fees</h6>
+                            <h6>Hospital Charges</h6>
                         </div>
                         <i class="fa fa-chevron-circle-down" id="down7"aria-hidden="true" onclick="show('list_info7','down7','up7')"></i>
                         <i class="fa fa-chevron-circle-up" id="up7"aria-hidden="true" onclick="hide('list_info7','down7','up7')"></i>
@@ -140,73 +125,32 @@
                     <div class="list_info inactive" id="list_info7">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor iste ad, veritatis, sed, ex ea provident nesciunt nulla sapiente repellat. Dignissimos quibusdam ullam eaque illum molestias reprehenderit sed necessitatibus.</p>                    
                     </div>
+                    <div class="list_heading last">
+                        <div class="left_head">
+                            <i class="fa fa-address-card" aria-hidden="true"></i>
+                            <h6>Membership</h6>
+                        </div>
+                        <i class="fa fa-chevron-circle-down" id="down8"aria-hidden="true" onclick="show('list_info8','down8','up8')"></i>
+                        <i class="fa fa-chevron-circle-up" id="up8"aria-hidden="true" onclick="hide('list_info8','down8','up8')"></i>
+                    </div>
+                    <div class="list_info inactive" id="list_info8">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor iste ad, veritatis, sed, ex ea provident nesciunt nulla sapiente repellat. Dignissimos quibusdam ullam eaque illum molestias reprehenderit sed necessitatibus.</p>                    
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!----------------Need help section---------------->
+     <!----------------Need help section---------------->
 
-    <!-- <%- include('partials/help.ejs') %> -->
-    <!----------------Need help section---------------->
-
-<section class="section6">
-
-    <div class="needhelp_headings">
-
-        <h2>Need Help?</h2>
-        <p>Just let us know, we will be happy to assist you.</p>
-            
-    </div>
-    
-    <div class="submit_your_enquiry_button">
-        <button class="lightblue_button border_button" type="button">Submit your enquiry</button>
-    </div>
-
-</section>
+    <%- include('partials/help.ejs') %>
     
     <!--------------------Footer------------------->
-    <!-- <%- include('partials/footer.ejs') %> -->
-    <footer class="footer">
 
-        <div class="footer_container">
-    
-            <div class="footer-logo_mobview">
-                <img class="mobview" src="../assets/footerlogo.jpg">
-            </div>
-    
-            <div class="footer-logo_tabdeskview">
-                <img class="tabdeskview" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg">
-            </div>
-    
-            <div class="footer_links">
-                <ul>
-                    <li><a href="../views/doctor.html" class="foo-ter">Doctors</a></li>
-                    <li><a href="../views/hospitals.html" class="foo-ter">Hospitals</a></li>
-                    <li><a href="../views/treatment.html" class="foo-ter">Treatment</a></li>
-                    <li><a href="../views/contactus.html" class="foo-ter">Other Services</a></li>
-                    <li><a href="../views/faq.html" class="foo-ter">FAQS</a></li>
-                </ul>
-            </div>
-    
-            <div class="font-awesome-icons">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </div>
-    
-            <div class="footer_text">
-                <p class="foo-ter">All Rights Reserved. &copy; tvastra 2018</p>
-            </div>
-    
-        </div>
-        
-    </footer>
-    
-    <div class="footer_blueline"></div>
-    
+    <%- include('partials/footer.ejs') %>
 
-    <script src="../javascript/show_hide.js"></script>
+    <!-- ------------------Scriptd------------------ -->
+
+    <script src="show_hide.js"></script>
+
 </body>
 </html>

@@ -125,7 +125,7 @@
 /* ------------Tablet view--------------- */
 @media only screen and (min-device-width:768px) {
     .hospitals_delhi {
-        background-image: url(../assets/hospitals.jpg);
+        background-image: url(hospitals.jpg);
         box-shadow: inset 0 0 0 1000px rgba(154, 193, 226, 0.8);
         background-repeat: no-repeat;
         background-position: center;

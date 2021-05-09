@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+      <!-----------Header------------------->
+
+      <%- include('partials/header.ejs') %>
+
+    <!-------------------Secttion1---------------------->
+    <section class="loginform">
+
+        <div class="shadow">
+            <div class="login_heading">
+                <h5>Login</h5>
+            </div>
+            <form action="submit" class="login">
+                
+                <div class="input1">
+                    <input type="tel" placeholder="Enter Mobile Number">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </div>
+                <div class="input2">
+                    <input type="text" placeholder="Enter OTP">
+                </div>
+                <div class="loginbutton">
+                    <div></div>
+                    <button type="submit" class="darkblue_button login_button">LOGIN</button>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </form>
+            <div class="login_footer">
+                <p>Not Registered? <a href="signup.ejs">Sign Up</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ----------------footer---------------- -->
+    <div class="foo--ter">
+        <p class="foo-ter">All Rights Reserved. &copy; tvastra 2018</p>
+    </div>
+    
+</body>
+</html>
