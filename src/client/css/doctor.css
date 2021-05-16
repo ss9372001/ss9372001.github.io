@@ -102,7 +102,7 @@
         margin-bottom: 1rem;
     }
     .img_iml1 {
-        height: 22.813rem;
+        height: 24rem;
     }
     .list li {
         display: flex;
@@ -193,9 +193,9 @@
     /* -------------------Doctors grid-------------------- */
     .doctors {
         display: grid;
-        grid-template-columns: 66% 33%;
-        column-gap: 0.313rem;
+        grid-template-columns: 66% 34%;
         padding-top: 0;
+        height: auto;
         position: relative;
     }
     .doctors .title {
@@ -211,21 +211,16 @@
     .doctors .left_info .list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 1.25rem;
+        margin-top: 1rem;
+        column-gap: 0.6rem;
     }
     .img_iml1 {
-        height: 17.5rem;
+        height: 16rem;
     }
     .appointment_button {
-        bottom: 1rem;
         left: 2.4rem;
+        bottom: 0;
         position: absolute;
-        font-size: 1rem;
-    }
-    .appointment_button {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 0;
     }
     .checkbox {
         margin-top: 1.25rem;
@@ -259,14 +254,17 @@
         padding: 6rem 5rem;
     }
     /* -----------doctors section---------- */
+        .doctors {
+            grid-template-columns: 75% 25%;
+        }
         .doctors .title {
             margin-top: 2.5rem;
         }
         .appointment_button {
-            bottom: 2.5rem;
+            bottom: 1rem;
         }
         .img_iml1 {
-            height: 340px;
+            height: 18rem;
             background-position: top;
         }
         .selectedfilters {

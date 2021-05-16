@@ -47,5 +47,4 @@ const otpManager = new OtpManager(otpRepository, {otpLength: 5, validityTime: 5}
 
 module.exports = {
   verifyOtp: verifyOtp
-  
 }

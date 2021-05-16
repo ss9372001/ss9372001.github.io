@@ -114,6 +114,9 @@
     .signup_footer p {
         text-align: center;
     }
+    .foo--ter {
+        margin-top: -8px;
+    }
     .foo--ter p {
         text-align: center;
         font-size: 1rem;

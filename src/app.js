@@ -78,6 +78,9 @@ app.get('/submit_your_query', (req, res)=>{
     res.render('submit-your-query');
 })
 
+app.get('/forgot_password', (req, res)=> {
+    res.render('forgot_password');
+})
 app.get('/login', (req, res) => {
 	res.render('login');
 });
@@ -85,6 +88,8 @@ app.get('/login', (req, res) => {
 app.get('/signup', (req, res) => {
 	res.render('signup');
 });
+
+
 
 app.get('/contact-us', (req, res) => {
 	res.render('contactus');
@@ -108,6 +113,14 @@ app.get('/book_an_appointment', (req, res)=>{
 
 app.get('/tvastra-plus', (req, res) => {
 	res.render('tvastra-plus');
+});
+
+app.get('/hello', (req, res) => {
+	res.render('hello');
+});
+
+app.get('/otp', (req, res) => {
+	res.render('otp');
 });
 
 app.set("port", process.env.PORT || 4000);

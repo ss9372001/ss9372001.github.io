@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="otp.css">
+    <title>Login with otp</title>
+</head>
+<body>
+      <!-----------Header------------------->
+
+      <%- include('partials/header.ejs') %>
+
+    <!-------------------Secttion1---------------------->
+    <section class="loginform">
+
+        <div class="shadow">
+            <div class="login_heading">
+                <h5>OTP</h5>
+            </div>
+            <form action="submit" class="otp">
+                
+                <p>We have sent One Time Password(OTP) to your registered Phone Number.</p>
+
+                <div class="enter_otp">
+                    <input type="text" class="form-control" maxlength="1"  />
+                    <input type="text" class="form-control" maxlength="1" />
+                    <input type="text" class="form-control" maxlength="1" />
+                    <input type="text" class="form-control" maxlength="1" />
+                </div>
+                <div class="counter">
+                    <p>Resend in <span class="counter">30</span> sec</p>
+                </div>
+                <div class="submitbutton">
+                    <div></div>
+                    <button type="submit" class="darkblue_button submit_button">SUBMIT</button>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- ----------------footer---------------- -->
+    <div class="foo--ter">
+        <p class="foo-ter">All Rights Reserved. &copy; tvastra 2018</p>
+    </div>
+    
+</body>
+</html>
